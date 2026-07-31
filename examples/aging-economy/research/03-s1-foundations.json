@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "stage": "s1",
+  "subject": "中国银发经济（60+ 人群产品与服务，消费侧）",
+  "generated_at": "2026-08-01T12:00:00+08:00",
+  "revision_round": 0,
+  "score": 7,
+  "claims": [
+    {
+      "id": "S1-C001",
+      "category": "origin",
+      "claim": "中国养老服务体系的基础格局'9073'（90%居家、7%社区、3%机构）最早以文件形式见于2007年《上海民政事业发展十一五规划》，2010年后被各地民政政策沿用，但国家层面文件从未正式写入该比例。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S108"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C002",
+      "category": "origin",
+      "claim": "2013年国务院《关于加快发展养老服务业的若干意见》（国发〔2013〕35号）确立养老服务社会化、市场化方向，撬动央企、国企、房企批量入局，被业界普遍称为'养老产业元年'。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S107", "S112"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C003",
+      "category": "market-size",
+      "claim": "2020年第七次人口普查：60岁及以上人口2.64亿，占18.70%；65岁及以上1.91亿，占13.50%。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S104"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C004",
+      "category": "current-state",
+      "claim": "2024年末中国60岁及以上人口31031万人，占22.0%；65岁及以上22023万人，占15.6%，60+人口首次突破3亿。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S101"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C005",
+      "category": "current-state",
+      "claim": "2025年末中国60岁及以上人口32338万人，65岁及以上人口22365万人，分别比上年增加1307万人和342万人；60-64岁低龄老人占比较大、健康与社会参与意愿较强。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S102"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C006",
+      "category": "current-state",
+      "claim": "按国际通行标准（60+占比20%-30%为中度老龄化），中国2021年（60+占比超20%前夕）至2024年间已进入中度老龄化阶段，且程度逐年加深。",
+      "label": "[Estimate]",
+      "confidence": "high",
+      "source_ids": ["S101", "S104"],
+      "reasoning": "七普2020年18.70%→2024年22.0%，四年上升3.3个百分点，越过20%阈值；'中度老龄化'区间为国际通行划分。"
+    },
+    {
+      "id": "S1-C007",
+      "category": "turning-point",
+      "claim": "2024年1月国办发〔2024〕1号《关于发展银发经济增进老年人福祉的意见》是中国首部以'银发经济'命名的国家政策文件，将银发经济定义为'向老年人提供产品或服务，以及为老龄阶段做准备等一系列经济活动的总和'，提出26条举措，正式把口径从'养老服务'扩展到'老龄经济+备老经济'。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S103"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C008",
+      "category": "market-size",
+      "claim": "国家发改委专家口径：目前中国银发经济规模约7万亿元，占GDP比重约6%；预计2035年达30万亿元左右，占GDP约10%。注意该口径含'备老经济'，是政策叙事口径而非纯老年消费口径。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S105"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C009",
+      "category": "market-size",
+      "claim": "中国老龄科学研究中心《中国老龄产业发展报告》测算：2020年中国老年人口消费潜力约4.37万亿元，占GDP 5.25%；2050年有望增至百万亿级。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S106"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C010",
+      "category": "market-size",
+      "claim": "银发经济市场规模存在显著口径分层：狭义老年消费口径约4-7万亿元，官方常用口径约7万亿元（占GDP约6%），广义含备老经济口径可达约16万亿元；'30万亿'是2035年预测值而非现状。",
+      "label": "[Estimate]",
+      "confidence": "medium",
+      "source_ids": ["S105", "S106", "S110"],
+      "reasoning": "对比三个来源的数字与口径定义：发改委7万亿 vs 老龄科学研究中心消费潜力4.37万亿（2020） vs 36氪/行业报告中16万亿广义口径；差异源于是否计入备老经济、金融、地产关联产业。引用时必须注明口径。"
+    },
+    {
+      "id": "S1-C011",
+      "category": "evolution-stage",
+      "claim": "阶段一（约2000-2012）：家庭养老为主、社会化供给空白期；老龄化初显（2000年60+占比约10%进入老龄化社会），政策以民政兜底为主，上海等地方开始探索'9073'格局。",
+      "label": "[Estimate]",
+      "confidence": "medium",
+      "source_ids": ["S107", "S108"],
+      "reasoning": "由S107发改委解读中'2012年底60+人口1.94亿'背景与S108考据的9073提出时间（2005-2007上海）推得此阶段边界；缺该阶段市场规模的直接统计。"
+    },
+    {
+      "id": "S1-C012",
+      "category": "evolution-stage",
+      "claim": "阶段二（2013-2016）：产业化元年与资本入局期；35号文放开社会资本准入，养老地产、险资养老社区（泰康2015年燕园开业前后）启动，长护险2016年首批15城试点。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S107", "S112"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C013",
+      "category": "evolution-stage",
+      "claim": "阶段三（2017-2020）：体系构建与理性回调期；'十三五'规划将机构养老定位由'支撑'调整为'补充'，医养结合纳入框架；同期养老地产降温，业界开始反思9073并提出'9901'等修正格局（机构实际入住率远低于3%）。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S108"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C014",
+      "category": "evolution-stage",
+      "claim": "阶段四（2021-2023）：国家战略升级期；积极应对人口老龄化上升为国家战略，'十四五'老龄事业规划设量化指标，'银发经济'概念在政策话语中酝酿成形；同期2022年中国人口进入负增长。",
+      "label": "[Estimate]",
+      "confidence": "medium",
+      "source_ids": ["S101", "S108"],
+      "reasoning": "人口负增长起点（2022）为公开常识性事实，本阶段来源只覆盖2024年末减少139万人；国家战略表述来自'十四五'规划公开信息，未单独采集原文。"
+    },
+    {
+      "id": "S1-C015",
+      "category": "evolution-stage",
+      "claim": "阶段五（2024至今）：'银发经济元年'后的全场景扩张期；1号文后政策从养老服务扩展到老年消费全场景（适老化改造国补、银发旅游列车、国家老年大学等），银发经济进入政策密集落地期。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S103", "S111"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C016",
+      "category": "current-state",
+      "claim": "截至2025年6月，中国60岁及以上银发网民规模达1.61亿人，老年群体互联网普及率首次过半（52.0%）。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S109"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C017",
+      "category": "current-state",
+      "claim": "当下张力一：政策叙事热与消费基本盘小之间的矛盾——'30万亿银发经济'是2035年预测的政策口径，而2020年老年人实际消费潜力测算仅约4.37万亿元，创业者可用的消费级市场比舆论印象小一个量级。",
+      "label": "[Estimate]",
+      "confidence": "high",
+      "source_ids": ["S105", "S106", "S110"],
+      "reasoning": "S105的30万亿为2035预测、7万亿为含备老的宽口径；S106的4.37万亿为2020年消费潜力窄口径；两者相差的口径差即'叙事与现金流'的落差。"
+    },
+    {
+      "id": "S1-C018",
+      "category": "current-state",
+      "claim": "当下张力二：供给结构错配——9073格局名存实亡，机构养老实际入住率远低于3%（学界以'9901'修正），而失能半失能老人的照护供给严重不足，'叫好不叫座'与'刚需无人供'并存。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S108", "S112"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C019",
+      "category": "trend",
+      "claim": "可见趋势一（政策资金流）：2025年起居家适老化改造纳入国家'两新'补贴（超长期特别国债，中央85%+地方15%，补贴比例可达30%、单户上限1-2万元），政府正在直接为C端适老化消费买单。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S111"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C020",
+      "category": "trend",
+      "claim": "可见趋势二（人群换代）：1962-1975年第二次婴儿潮人口正批量进入退休，60-64岁低龄、健康、高参与意愿的新老人是未来1-2年增量主力，消费重心从'照护老人'向'活力老人'迁移。",
+      "label": "[Estimate]",
+      "confidence": "high",
+      "source_ids": ["S102", "S101"],
+      "reasoning": "S102明确60-64岁低龄老人占比较大且健康参与意愿强；婴儿潮年份与每年新增约1300万60+人口（2024→2025增1307万）交叉印证。"
+    },
+    {
+      "id": "S1-C021",
+      "category": "trend",
+      "claim": "趋势判断：未来1-2年是'政策资金+低龄新老人+短视频触达'三要素同时到位的窗口，活力老人消费细分（文旅、教育、兴趣、形象）的可见增长确定性高于照护刚需细分。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": ["S102", "S109", "S111"],
+      "reasoning": ""
+    },
+    {
+      "id": "S1-C022",
+      "category": "current-state",
+      "claim": "证据时效自查：人口与政策数据均为2024-2026年官方口径（新鲜）；市场规模口径数据最旧为2020年消费潜力测算（老龄科学研究中心），2026年更新的狭义消费口径缺失，标记为已知缺口。",
+      "label": "[Assumption]",
+      "confidence": "medium",
+      "source_ids": ["S106"],
+      "reasoning": "未采集到2024-2026年由中国老龄科学研究中心或同等级机构更新的老年消费窄口径测算，现有窄口径数字依赖2020年基准外推。"
+    }
+  ],
+  "artifacts": {
+    "evolution_stages_summary": [
+      {"stage": "2000-2012 家庭养老主导期", "main_theme": "民政兜底+地方探索9073", "claims": ["S1-C011"]},
+      {"stage": "2013-2016 产业化元年", "main_theme": "35号文放开社会资本，养老地产与险资入局，长护险试点", "claims": ["S1-C002", "S1-C012"]},
+      {"stage": "2017-2020 体系构建与回调", "main_theme": "机构定位降为'补充'，9073被反思为9901", "claims": ["S1-C013"]},
+      {"stage": "2021-2023 国家战略升级", "main_theme": "积极应对老龄化成国家战略，人口进入负增长", "claims": ["S1-C014"]},
+      {"stage": "2024- 银发经济元年", "main_theme": "1号文扩口径到全消费场景，补贴与基建落地", "claims": ["S1-C007", "S1-C015"]}
+    ],
+    "key_tensions": ["S1-C017", "S1-C018"],
+    "hypothesis_check": {
+      "hypothesis_file": "01-day1-hypothesis.md",
+      "preliminary_findings": [
+        "子假设1（60-70活力老人是付费主力）：S1-C005/S1-C020 支持人群换代方向，未推翻",
+        "主假设方向（窗口在活力老人身份型消费）：S1-C021 初步支持，但S1-C017提示消费基本盘小于舆论印象，需S2验证付费证据",
+        "子假设4（照护刚需对小团队关闭）：S1-C018显示照护是真刚需但供给失衡，'关闭'判断需S2用玩家盈利数据验证"
+      ]
+    },
+    "sources": [
+      {"id": "S101", "tier": "T1", "title": "中华人民共和国2024年国民经济和社会发展统计公报（国家统计局）", "url": "https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html", "collected": "2026-08-01", "supported_claim_ids": ["S1-C004", "S1-C006", "S1-C014", "S1-C020"]},
+      {"id": "S102", "tier": "T1", "title": "国家统计局：2025年全国人口总量为140489万人 人口高质量发展持续推进", "url": "https://www.stats.gov.cn/xxgk/jd/sjjd2020/202601/t20260119_1962338.html", "collected": "2026-08-01", "supported_claim_ids": ["S1-C005", "S1-C020", "S1-C021"]},
+      {"id": "S103", "tier": "T1", "title": "国务院办公厅关于发展银发经济增进老年人福祉的意见（国办发〔2024〕1号）", "url": "https://www.gov.cn/zhengce/content/202401/content_6926087.htm", "collected": "2026-08-01", "supported_claim_ids": ["S1-C007", "S1-C015"]},
+      {"id": "S104", "tier": "T1", "title": "第七次全国人口普查公报（第五号）——人口年龄构成情况", "url": "https://www.stats.gov.cn/sj/tjgb/rkpcgb/qgrkpcgb/202302/t20230206_1902005.html", "collected": "2026-08-01", "supported_claim_ids": ["S1-C003", "S1-C006"]},
+      {"id": "S105", "tier": "T2", "title": "国家发改委专家解读：加快完善银发经济支持政策体系（7万亿/6%、2035年30万亿/10%）", "url": "https://www.ndrc.gov.cn/xwdt/spfg/zfzjt/202401/t20240122_1363612.html", "collected": "2026-08-01", "supported_claim_ids": ["S1-C008", "S1-C010", "S1-C017"]},
+      {"id": "S106", "tier": "T2", "title": "财新：专家指中国老龄产业缺乏顶层设计，适老产品匮乏（引老龄科学研究中心消费潜力测算）", "url": "https://www.caixin.com/2023-12-25/102149486.html", "collected": "2026-08-01", "supported_claim_ids": ["S1-C009", "S1-C010", "S1-C017", "S1-C022"]},
+      {"id": "S107", "tier": "T1", "title": "国家发改委、民政部解读《关于加快发展养老服务业的若干意见》（国发〔2013〕35号）", "url": "https://www.ndrc.gov.cn/fzggw/jgsj/shs/sjdt/201309/t20130918_1121602.html", "collected": "2026-08-01", "supported_claim_ids": ["S1-C002", "S1-C011", "S1-C012"]},
+      {"id": "S108", "tier": "T3", "title": "中国养老服务格局：'9073'还是'9901'？（知乎专栏，含格局出处考据）", "url": "https://zhuanlan.zhihu.com/p/693793900", "collected": "2026-08-01", "supported_claim_ids": ["S1-C001", "S1-C011", "S1-C013", "S1-C014", "S1-C018"]},
+      {"id": "S109", "tier": "T2", "title": "人民网：超半数老年人上网 我国银发网民规模达1.61亿人（CNNIC第56次报告）", "url": "http://finance.people.com.cn/n1/2025/0721/c1004-40526406.html", "collected": "2026-08-01", "supported_claim_ids": ["S1-C016", "S1-C021"]},
+      {"id": "S110", "tier": "T3", "title": "AgeClub转载：36氪《2026年中国银发经济产业研究报告》（市场规模多口径对比）", "url": "https://www.ageclub.net/article-detail/9667", "collected": "2026-08-01", "supported_claim_ids": ["S1-C010", "S1-C017"]},
+      {"id": "S111", "tier": "T1", "title": "国家发改委等：关于2025年加力扩围实施大规模设备更新和消费品以旧换新政策的通知（含居家适老化改造补贴）", "url": "https://www.ndrc.gov.cn/xwdt/tzgg/202501/t20250108_1395565.html", "collected": "2026-08-01", "supported_claim_ids": ["S1-C015", "S1-C019", "S1-C021"]},
+      {"id": "S112", "tier": "T2", "title": "财新周刊：上亿失能老人缺乏照护 供需失衡难题待解", "url": "https://weekly.caixin.com/2024-06-08/102204457.html", "collected": "2026-08-01", "supported_claim_ids": ["S1-C002", "S1-C012", "S1-C018"]}
+    ]
+  }
+}

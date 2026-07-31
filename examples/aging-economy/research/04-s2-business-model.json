@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.0",
+  "stage": "s2",
+  "subject": "中国银发经济（60+ 人群产品与服务，消费侧）",
+  "generated_at": "2026-08-01T14:00:00+08:00",
+  "revision_round": 0,
+  "score": 7,
+  "claims": [
+    {
+      "id": "S2-C001",
+      "category": "player",
+      "claim": "头部玩家·养老社区：泰康之家截至2024年底布局36城43个项目、22城25家开业、在住居民约1.7万人，采用拿地自建CCRC重资产模式，绑定'幸福有约'保险产品（累计带动23万人购买、撬动保费规模约4600亿元）。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S206", "S207"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C002",
+      "category": "player",
+      "claim": "泰康医养康宁板块2024年营收约70亿元（+24.26%），但运营成本61.46亿元（+40.25%），毛利率连续三年下滑（2022年31.0%→2023年22.3%→2024年12.3%），运营成本已高于运营收入，养老社区运营本身不赚钱，盈利逻辑在保险资金端。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S206"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C003",
+      "category": "player",
+      "claim": "泰康旗舰社区入住率极高（燕园独立生活区99.7%、2018年起盈利），但已运营25个社区中19个备案床位不足规划半数，新社区与二三线复制未经验证，行业盈亏平衡线约60%入住率。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S206"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C004",
+      "category": "player",
+      "claim": "头部玩家·老年消费品：足力健2019年巅峰营收约40亿元、门店超5000家；其后连续三年年亏3-4亿元，2025年营收约15-16亿元、门店缩至3000余家、负债约7亿元，2025年3月因虚假宣传与不正当竞争被罚3100万元。知名度第一不等于盈利能力。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S201", "S202"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C005",
+      "category": "player",
+      "claim": "头部玩家·老年在线教育：量子之歌（千尺学堂/启牛学堂/讲真）FY2025（截至2025年6月）营收27.26亿元，同比降28.2%；净利润3.57亿元；个人在线学习收入从33.64亿降至22.35亿元，公司收购潮玩品牌Letsvan并给出2026财年潮玩收入7.5-8亿元指引，主业重心正在离开银发教育。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S203"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C006",
+      "category": "player",
+      "claim": "量子之歌老年教育模式毛利率超85%，但依赖'低价引流课→社群转化高阶课'的投流模型，黑猫投诉上虚假宣传（名师不授课、录播充直播）、退费难、诱导消费投诉量大，旗下启牛曾因虚假宣传被北京市监多次处罚、被央视曝光，新华社已专题揭露老年课堂骗局套路。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S204", "S205"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C007",
+      "category": "player",
+      "claim": "腰部玩家·老年兴趣社区：红松学堂（原携程高管李乔创立）2020年获千万美元A轮、2021年获BAI领投亿元级A+轮融资，走'兴趣课程+线上社群'路线；其收入规模与盈利状况从未公开披露。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S213"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C008",
+      "category": "player",
+      "claim": "腰部玩家·居家照护：福寿康为居家长护险头部企业，覆盖60+城市、200+护理站，行业媒体报道其连续4年盈利、净利率约7%、估值约31亿元，收入结构中长护险占约60-75%、政府购买10-15%、市场化个人付费15-25%。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S208"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C009",
+      "category": "player",
+      "claim": "长尾/警示案例·垂直老年App：糖豆（广场舞社区）累计融资约1亿美元（腾讯C轮），2019年月活峰值超2000万，2022年银发月活滑落至约312万，被抖音/快手的广场舞内容虹吸，盈利数据从未披露。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S209"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C010",
+      "category": "player",
+      "claim": "长尾玩家·内容社区：美篇从中老年图文工具转型'不惑后'内容社区与生活解决方案，获5轮融资，但公开信息显示其商业化始终不顺，广告与增值变现薄弱。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S215"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C011",
+      "category": "player",
+      "claim": "平台型玩家·银发旅游：2025年中国银发旅游约10.05亿人次、收入约1.14万亿元；携程50+用户订单2024年同比增长超22%（61-65岁段+58%），银发用户占携程用户10%、消费力高于大盘三成，'老友会'品牌会员超300万。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S211", "S212"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C012",
+      "category": "player",
+      "claim": "旅居养老（候鸟式）2024年市场规模约6700亿元，是活力老人消费的另一大细分，但该数字来自单一商业研究机构口径，可靠性待交叉验证。",
+      "label": "[Estimate]",
+      "confidence": "low",
+      "source_ids": ["S216"],
+      "reasoning": "仅中研普华一家商业研究机构给出6700亿元口径，无官方或第二家独立机构交叉验证，按规则降级为Estimate+低置信。"
+    },
+    {
+      "id": "S2-C013",
+      "category": "business-model-topology",
+      "claim": "银发经济五种主流商业模式并存：①保险+CCRC重资产（泰康）②长护险B2G2C居家照护（福寿康）③低价引流课→高阶课投流模型（量子之歌）④单品类品牌卖货（足力健）⑤内容社区+广告/增值（糖豆、美篇）。五种模式的钱流来源完全不同：保险资金、医保基金、老人直接付费、老人/子女付费、广告主。",
+      "label": "[Estimate]",
+      "confidence": "high",
+      "source_ids": ["S206", "S208", "S204", "S201", "S209"],
+      "reasoning": "由S2-C001至S2-C010各玩家证据归纳出的模式分类，五类钱流（保险/医保/C端课程/C端商品/广告）均有对应玩家证据。"
+    },
+    {
+      "id": "S2-C014",
+      "category": "profit-cost-core",
+      "claim": "在线老年教育模式的利润核心是边际成本近零的录播课（毛利率85%+），成本核心是短视频投流获客；该模式现金流为正（量子之歌连续盈利）但增长与合规双封顶，收入已连续下滑。",
+      "label": "[Estimate]",
+      "confidence": "high",
+      "source_ids": ["S203", "S204"],
+      "reasoning": "毛利率85%（S204）+净利3.57亿（S203）证明模型可盈利；营收-28.2%与转型潮玩证明天花板；投诉与处罚记录证明合规封顶。"
+    },
+    {
+      "id": "S2-C015",
+      "category": "profit-cost-core",
+      "claim": "居家照护模式的成本核心是护理人力（劳动密集、控费定价），利润核心是长护险托底现金流之上的市场化增值服务（24小时照护、助浴、辅具租赁、适老化改造）；纯长护险业务只够保本，净利润来自自费叠加层。",
+      "label": "[Estimate]",
+      "confidence": "medium",
+      "source_ids": ["S208"],
+      "reasoning": "福寿康收入结构（长护险60-75%托底、自费15-25%）+净利率7%反推：若长护险部分有高利润则整体净利率应远高于7%，行业普遍盈亏平衡的事实支持'托底不赚钱、增值出利润'的判断。"
+    },
+    {
+      "id": "S2-C016",
+      "category": "profit-cost-core",
+      "claim": "养老社区重资产模式的利润不在运营端（毛利率12.3%且下滑）而在保险端：养老社区本质是保险负债端的久期匹配资产与保单销售场景，独立创业者无法复制该模式。",
+      "label": "[Estimate]",
+      "confidence": "high",
+      "source_ids": ["S206", "S207"],
+      "reasoning": "运营亏损（S2-C002）+撬动4600亿保费（S2-C001）并存，说明该模式对险企成立的充要条件是保险资金池，无保险牌照者进入即死。"
+    },
+    {
+      "id": "S2-C017",
+      "category": "profit-cost-core",
+      "claim": "老年消费品单品类品牌的教训：足力健证明'电视广告+加盟开店+单品类'可以快速做到40亿，但渠道红利消失（电视→短视频）、质量与合规失守后品牌坍塌速度同样快；老年品牌的护城河是信任而非知名度。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": ["S201", "S202"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C018",
+      "category": "business-model-topology",
+      "claim": "垂直老年App的流量广告模式已被判死刑：糖豆、美篇均手握千万级老年用户却无法有效变现，内容消费场景被抖音/快手/视频号整体虹吸，独立垂直App窗口已关闭。",
+      "label": "[Estimate]",
+      "confidence": "high",
+      "source_ids": ["S209", "S215"],
+      "reasoning": "糖豆月活从2000万跌至312万且融资1亿美元未跑通变现；美篇5轮融资后商业化仍不顺；同期短视频银发网民1.61亿（见S1-C016），流量入口集中度判定成立。"
+    },
+    {
+      "id": "S2-C019",
+      "category": "value-chain",
+      "claim": "价值链上游=内容与师资（课程/直播达人）、产品供应链（鞋服/辅具/食品工厂）、土地物业与护理人力；中游=品牌与服务运营商（足力健、福寿康、泰康、老年教育机构）；下游=流量平台（抖音/快手/视频号/携程）+线下信任节点（社区、药店、老年大学、广场舞领队）。下游流量入口高度集中，是整条链议价权最强环节。",
+      "label": "[Estimate]",
+      "confidence": "medium",
+      "source_ids": ["S209", "S211", "S213"],
+      "reasoning": "由玩家证据归纳：糖豆/美篇被下游平台虹吸证明下游议价权；红松/量子之歌均依赖微信生态与投流证明中游对下游依赖；携程老友会证明平台直接下场做中游。"
+    },
+    {
+      "id": "S2-C020",
+      "category": "cross-judgment",
+      "claim": "横纵交叉判断一（纵向必然规律）：银发经济所有跑通现金流的模式都遵循'政策钱流先行、C端付费殿后'——长护险养福寿康、保险牌照养泰康、国补养适老化改造；纯C端付费模式（垂直App、纯卖货）要么死要么高度脆弱。小团队进入必须识别自己细分里的'政策钱流'在哪。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": ["S208", "S206", "S209"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C021",
+      "category": "cross-judgment",
+      "claim": "横纵交叉判断二（横向反常）：最赚钱的银发公司正在逃离银发赛道——量子之歌毛利85%、年净利3.5亿，却收购潮玩品牌全面转型；说明'投流卖课'模型的增长天花板与监管风险已被其内部定价，纵向（需求增长）无法解释这一反常，只能从横向（合规+获客成本恶化）解释。",
+      "label": "[Opinion]",
+      "confidence": "high",
+      "source_ids": ["S203", "S204", "S205"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C022",
+      "category": "cross-judgment",
+      "claim": "横纵交叉判断三（双重红利玩家）：福寿康（踩中长护险扩面节奏+居家照护生态位，连续盈利）与携程老友会（踩中低龄老人旅游换代+平台流量零成本入口，会员/GMV翻倍）是'纵向节奏+横向生态位'双对的教科书案例；足力健是踩对节奏但生态位（渠道）崩塌的反例。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": ["S208", "S212", "S201"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C023",
+      "category": "cross-judgment",
+      "claim": "横纵交叉判断四（1-2年交汇机会）：①活力老人兴趣/文旅服务（内容驱动、非投流驱动）②适老化改造国补链条上的轻资产服务商（设计/施工/辅具集成）③短视频老年信任代理（银发KOL/社群团长）的孵化与供给组织——三者共同点是借势政策钱流或平台流量而非自建重资产。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": ["S211", "S212", "S213"],
+      "reasoning": ""
+    },
+    {
+      "id": "S2-C024",
+      "category": "business-model-topology",
+      "claim": "证据缺口：老年教育、兴趣社群细分内腰部与长尾玩家（红松、线下老年大学运营商、旅居创业公司）的客单价、续费率、获客成本均无一手可得数据，'付费模型已跑通'目前仅有量子之歌一家上市公司证据，且该证据正在恶化。",
+      "label": "[Assumption]",
+      "confidence": "medium",
+      "source_ids": ["S213", "S203"],
+      "reasoning": "红松未披露财务；国家老年大学体系为公共服务非商业证据；需在S2.5/S3用从业者一手证据补齐。"
+    }
+  ],
+  "artifacts": {
+    "players_table": [
+      {"player": "泰康之家", "tier_position": "头部", "model": "保险+CCRC重资产", "evidence": "36城43项目；运营毛利率12.3%下滑；撬动保费4600亿", "profitability": "运营端亏损边缘，利润在保险端", "claims": ["S2-C001", "S2-C002", "S2-C003"]},
+      {"player": "足力健", "tier_position": "头部（衰落中）", "model": "单品类品牌+加盟渠道", "evidence": "巅峰40亿→现15-16亿，负债7亿，被罚3100万", "profitability": "连续三年亏损后勉强维持", "claims": ["S2-C004"]},
+      {"player": "量子之歌/千尺学堂", "tier_position": "头部", "model": "低价引流课→高阶课投流", "evidence": "FY2025营收27.26亿(-28%)、净利3.57亿、毛利率85%+", "profitability": "盈利但收入下滑、主动转型", "claims": ["S2-C005", "S2-C006"]},
+      {"player": "红松学堂", "tier_position": "腰部", "model": "兴趣课程+社群", "evidence": "亿元级A+轮融资，财务未披露", "profitability": "未知", "claims": ["S2-C007", "S2-C024"]},
+      {"player": "福寿康", "tier_position": "腰部（居家照护头部）", "model": "长护险B2G2C+市场化增值", "evidence": "60+城市，长护险收入60-75%，净利率约7%", "profitability": "连续4年盈利（行业媒体口径）", "claims": ["S2-C008"]},
+      {"player": "携程老友会", "tier_position": "平台型", "model": "平台自营银发旅游品牌", "evidence": "会员300万+，银发收入1.14万亿市场", "profitability": "依托平台流量，高增长", "claims": ["S2-C011"]},
+      {"player": "糖豆", "tier_position": "长尾/警示", "model": "垂直社区+广告", "evidence": "月活2000万→312万", "profitability": "未跑通", "claims": ["S2-C009"]},
+      {"player": "美篇", "tier_position": "长尾", "model": "内容社区+增值", "evidence": "5轮融资，商业化不顺", "profitability": "未跑通", "claims": ["S2-C010"]}
+    ],
+    "business_model_topology": {
+      "models": [
+        {"name": "保险+CCRC重资产", "money_flow": "保险保费/资金池", "small_team_accessible": false, "claims": ["S2-C001", "S2-C016"]},
+        {"name": "长护险B2G2C居家照护", "money_flow": "医保基金托底+自费增值", "small_team_accessible": "部分（重人力、需资质）", "claims": ["S2-C008", "S2-C015"]},
+        {"name": "低价引流课→高阶课投流", "money_flow": "老人直接付费", "small_team_accessible": "模式可复制但合规与投流成本高", "claims": ["S2-C005", "S2-C006", "S2-C014"]},
+        {"name": "单品类品牌卖货", "money_flow": "老人/子女付费", "small_team_accessible": "窗口窄，渠道逻辑已变", "claims": ["S2-C004", "S2-C017"]},
+        {"name": "垂直社区+广告", "money_flow": "广告主", "small_team_accessible": false, "claims": ["S2-C009", "S2-C018"]}
+      ]
+    },
+    "value_chain": {
+      "upstream": "内容/师资、产品供应链、土地物业、护理人力",
+      "midstream": "品牌与服务运营商（利润与成本核心所在）",
+      "downstream": "流量平台（议价权最强）+线下信任节点（社区/药店/老年大学/领队）",
+      "claims": ["S2-C019"]
+    },
+    "cross_judgments": ["S2-C020", "S2-C021", "S2-C022", "S2-C023"],
+    "ai_opportunity_seeds": ["S2-C023"],
+    "hypothesis_check": {
+      "hypothesis_file": "01-day1-hypothesis.md",
+      "preliminary_findings": [
+        "子假设2（老年教育付费模型已跑通）：部分证实——量子之歌证明可盈利，但收入-28%且转型、合规风险高，'跑通'成色打折（S2-C005/S2-C021）",
+        "子假设4（照护刚需对小团队关闭）：修正——重资产CCRC确实关闭（S2-C016），但长护险体系内存在轻资产缝隙（福寿康模式S2-C015），非全关",
+        "子假设5（适老产品被巨头与白牌夹击）：足力健案例支持品牌窗口脆弱（S2-C017），待S2.5扩列验证",
+        "子假设6（最大风险是信任）：支持——量子之歌投诉与足力健被罚均指向信任是行业核心资产与核心风险（S2-C006/S2-C004）"
+      ]
+    },
+    "sources": [
+      {"id": "S201", "tier": "T2", "title": "界面新闻：'老人鞋之王'跌落神坛，足力健为何留不住大爷大妈的心？", "url": "https://www.jiemian.com/article/12833010.html", "collected": "2026-08-01", "supported_claim_ids": ["S2-C004", "S2-C013", "S2-C017", "S2-C022"]},
+      {"id": "S202", "tier": "T2", "title": "第一财经商业数据中心：从年销40亿到负债7亿，足力健怎么就崩了？", "url": "http://www.cbndata.com/information/294159", "collected": "2026-08-01", "supported_claim_ids": ["S2-C004", "S2-C017"]},
+      {"id": "S203", "tier": "T2", "title": "搜狐财经：量子之歌2025财年全年营收27.26亿元，全面聚焦潮玩赛道（财报转载）", "url": "https://www.sohu.com/a/936263103_115563", "collected": "2026-08-01", "supported_claim_ids": ["S2-C005", "S2-C014", "S2-C021", "S2-C024"]},
+      {"id": "S204", "tier": "T2", "title": "观察者网财经号：量子之歌，一路争议（毛利率85%+、投流模式拆解）", "url": "https://user.guancha.cn/main/content?id=1354728", "collected": "2026-08-01", "supported_claim_ids": ["S2-C006", "S2-C013", "S2-C014", "S2-C021"]},
+      {"id": "S205", "tier": "T2", "title": "新华视点：揭秘老年课堂骗局套路", "url": "http://www.news.cn/20251231/bdc84b97303f44b7b2d88fd68fb4b2c2/c.html", "collected": "2026-08-01", "supported_claim_ids": ["S2-C006", "S2-C021"]},
+      {"id": "S206", "tier": "T2", "title": "观点指数：泰康之家毛利承压，养老产业进入快车道里的现实挑战", "url": "https://gdiri.guandian.cn/article/20250514/485575.html", "collected": "2026-08-01", "supported_claim_ids": ["S2-C001", "S2-C002", "S2-C003", "S2-C013", "S2-C016", "S2-C020"]},
+      {"id": "S207", "tier": "T2", "title": "腾讯新闻：泰康'转向'：养老社区重资产模式调整", "url": "https://news.qq.com/rain/a/20250531A01EW200", "collected": "2026-08-01", "supported_claim_ids": ["S2-C001", "S2-C016"]},
+      {"id": "S208", "tier": "T3", "title": "AgeClub：估值31亿、连续盈利4年，居家养老赛道跑出第一个IPO种子选手（福寿康）", "url": "https://www.ageclub.net/article-detail/9615", "collected": "2026-08-01", "supported_claim_ids": ["S2-C008", "S2-C013", "S2-C015", "S2-C020", "S2-C022"]},
+      {"id": "S209", "tier": "T3", "title": "36氪：银发经济案例复盘——糖豆广场舞全视角全生命周期分析", "url": "https://m.36kr.com/p/2258912072921223", "collected": "2026-08-01", "supported_claim_ids": ["S2-C009", "S2-C013", "S2-C018", "S2-C019", "S2-C020"]},
+      {"id": "S211", "tier": "T3", "title": "AgeClub：中国银发文旅市场深度洞察报告（2026）", "url": "https://www.ageclub.net/article-detail/9478", "collected": "2026-08-01", "supported_claim_ids": ["S2-C011", "S2-C019", "S2-C023"]},
+      {"id": "S212", "tier": "T2", "title": "搜狐财经：携程发布2024年财报——收入533亿元、银发市场迎机遇", "url": "https://www.sohu.com/a/873524136_122006510", "collected": "2026-08-01", "supported_claim_ids": ["S2-C011", "S2-C022", "S2-C023"]},
+      {"id": "S213", "tier": "T2", "title": "网易科技/36氪：中老年学习社交平台'红松学堂'获亿元A+轮融资 BAI资本领投", "url": "https://www.163.com/dy/article/GT4LQ5FJ05524XBF.html", "collected": "2026-08-01", "supported_claim_ids": ["S2-C007", "S2-C019", "S2-C023", "S2-C024"]},
+      {"id": "S215", "tier": "T2", "title": "虎嗅：美篇——从哪里起飞，从哪里跌落", "url": "https://www.huxiu.com/article/4875131.html", "collected": "2026-08-01", "supported_claim_ids": ["S2-C010", "S2-C018"]},
+      {"id": "S216", "tier": "T3", "title": "中研普华：旅居养老行业机遇与挑战分析——预计2024年市场规模6700亿元", "url": "https://www.chinairn.com/scfx/20241111/173516898.shtml", "collected": "2026-08-01", "supported_claim_ids": ["S2-C012"]}
+    ]
+  }
+}

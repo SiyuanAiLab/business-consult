@@ -1,0 +1,4 @@
+interface:
+  display_name: "商业咨询"
+  short_description: "路由商业问题到诊断、调研、证伪与报告子 Skill"
+  default_prompt: "Use $business-consult to route this business question and maintain its project progress."

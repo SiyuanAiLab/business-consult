@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.0",
+  "stage": "s2.5",
+  "subject": "中国银发经济（60+人群消费侧产品与服务）进入决策",
+  "generated_at": "2026-08-01T10:00:00+08:00",
+  "revision_round": 0,
+  "score": 7,
+  "claims": [
+    {
+      "id": "S25-C001",
+      "category": "direct-competitor",
+      "claim": "量子之歌（千尺学堂母公司）2024财年总营收37.95亿元、净利润3.86亿元，实现扭亏为盈；老年兴趣课付费模型在商业上已被跑通。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S301"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C002",
+      "category": "direct-competitor",
+      "claim": "量子之歌单季付费人数从2024年初约50万降至2024年末约30万（降幅约40%），收入自2024年Q2登顶后连续同比、环比双降，头部玩家增长见顶。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S301"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C003",
+      "category": "direct-competitor",
+      "claim": "红松（中老年在线兴趣社区）注册用户突破1000万，5年累计课程付费用户超100万，定位退休人群兴趣社交入口。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S302"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C004",
+      "category": "direct-competitor",
+      "claim": "东犁退休俱乐部2025年旅游业务营收超8亿元、总营收约10亿元、复购率超60%，2026年4月完成亿元级B轮融资（恒旭资本领投），是线下信任型银发服务跑通规模化的代表。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S303"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C005",
+      "category": "direct-competitor",
+      "claim": "新东方2026年1月以「退休俱乐部」品牌进入老年兴趣教育赛道，以19.9元线下体验课引流，头部教育公司开始正面进入。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S314"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C006",
+      "category": "direct-competitor",
+      "claim": "足力健从2019年巅峰年销约40亿元、约5000家门店，跌落至年营收约15-16亿元、门店缩减过半，拖欠短视频代运营商900万元且债务缠身，银发实物产品+孝心营销+重资产模式脆弱性已被验证。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S304"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C007",
+      "category": "substitute",
+      "claim": "公办老年大学每学期收费约300-600元（15次课），价格低于多数商业培训班单节课费用，是民办银发教育机构的定价天花板与最强替代品。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S305"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C008",
+      "category": "substitute",
+      "claim": "京东《2024银发族消费报告》：2024年1-9月银发族线上成交单量、购物用户数、成交金额较2019年同期分别增长238%、187%、105%，老人直接上电商自购已成为实物消费主通道。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S306"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C009",
+      "category": "substitute",
+      "claim": "子女代购是银发实物消费的重要支付通道：电商大促报道显示超六成适老智能商品由子女为父母购买，「子女代购+平台比价」可满足大部分实物需求，独立银发品牌面对的是家庭采购流程而非老人本人。",
+      "label": "[Estimate]",
+      "confidence": "medium",
+      "source_ids": [],
+      "reasoning": "「超六成」比例来自电商大促报道（淘宝亲情账号/母婴行业观察转述）的二手数据，未核对一手报告原文，故降级为 [Estimate]；方向性判断（子女代付是实物消费重要通道）有京东报告与平台亲情账号功能佐证。"
+    },
+    {
+      "id": "S25-C010",
+      "category": "ecosystem",
+      "claim": "抖音2025年1月发布「银龄计划」重点扶持100位以上中老年达人，并与国家老年大学合作（105节精品课无偿共享、国家老年大学小程序入驻抖音），平台已直接进入老年教育内容供给。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S307"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C011",
+      "category": "ecosystem",
+      "claim": "美团养老服务已覆盖全国超300座城市、超3万家服务机构入驻，「老人助浴」搜索量同比增长120%、团购订单量增长超85%，并于2026年1月与北京市民政局签署战略合作接入上百家备案养老机构，本地生活平台正在成为银发服务交易入口。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S308"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C012",
+      "category": "ecosystem",
+      "claim": "快手2024年本地生活到店综合品类中，50岁以上银发人群GMV同比增速达1044%，为各年龄段最快，下沉市场银发消费在信任电商场景快速放量。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S309"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C013",
+      "category": "benchmark",
+      "claim": "日本Club Tourism专注老年旅游，年收入约1600亿日元、会员规模百万级，证明「老年细分人群+信任会员制」可支撑超大单体公司。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S310"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C014",
+      "category": "benchmark",
+      "claim": "日本Alpen以50岁以上女性为核心客群运营健身会员（月费约6160日元、年费约4000元人民币），客户满意度95%以上，单店营收高于Curves并持续扩张，验证活力老人「按月付费+社区门店」模型。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S311"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C015",
+      "category": "benchmark",
+      "claim": "财新专栏：中国65岁以上人口占比约15.6%（接近日本2000年水平）、生育率约1.0已低于日本，但人均GDP仅约为日本1990年代的三分之一，「未富先老」决定日本银发经验可参照不可复制，尤其不能照搬其高客单服务定价。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S312"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C016",
+      "category": "benchmark",
+      "claim": "2024年乖宝宠物营收52.45亿元（同比+21.2%）、中宠股份营收44.65亿元（同比+19.2%），宠物经济这一「情感型非刚需」赛道跑出了两家50亿级上市公司。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S313"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C017",
+      "category": "substitute",
+      "claim": "江苏省消保委调查：48.8%的老年游客被要求签署额外免责协议、37.8%需强制家属陪同、22.9%需提供健康证明，传统旅行社对高龄老人设置准入门槛甚至拒收，跟团游这一主流替代品在70+人群留下服务空白。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S315"],
+      "reasoning": ""
+    },
+    {
+      "id": "S25-C018",
+      "category": "structural-judgment",
+      "claim": "平台打包风险真实存在：抖音/美团/快手均已高调切入银发赛道，但当前动作以内容合作、频道化与政务对接为主，尚未对银发服务的「信任-交易-履约」形成闭环垄断，垂类信任型服务仍有窗口期。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": ["S307", "S308", "S309"],
+      "reasoning": "综合三家平台动作的形态判断：均在做流量与供给聚合，未见对线下履约与信任代理环节的排他性控制。"
+    },
+    {
+      "id": "S25-C019",
+      "category": "structural-judgment",
+      "claim": "格局结论：线上老年教育的头部位置已被量子之歌/红松占住且增长见顶，实物产品侧足力健衰落证明品牌+重资产路径对小团队不友好；热钱与验证最充分的方向是线下信任型服务（东犁旅游社交、新东方退休俱乐部入场）。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": ["S301", "S302", "S303", "S304", "S314"],
+      "reasoning": "由五类直接竞品的经营状态交叉归纳。"
+    }
+  ],
+  "artifacts": {
+    "quota_plan": {
+      "direct": { "target": 5, "filled": 5, "note": "覆盖线上教育/兴趣社区/旅游社交/新入局巨头/实物产品五种形态" },
+      "substitutes": { "target": 4, "filled": 4, "note": "公办低价教育、子女代购电商、平台免费内容、传统跟团游四条替代路径" },
+      "ecosystem": { "target": 4, "filled": 4, "note": "抖音/视频号/美团/快手四大流量与交易入口" },
+      "benchmarks": { "target": 3, "filled": 3, "note": "日本两家（旅游/健身）+国内宠物经济类比" }
+    },
+    "candidates": [
+      {
+        "name": "千尺学堂（量子之歌）",
+        "category": "direct",
+        "role": "线上老年兴趣教育头部：书法/声乐/八段锦等，低价引流+社群转化",
+        "url": "https://www.donews.com/article/detail/6130/82831.html",
+        "evidence_state": "verified-secondary（财报数据经多家财经媒体交叉）",
+        "supported_claim_ids": ["S25-C001", "S25-C002"]
+      },
+      {
+        "name": "红松",
+        "category": "direct",
+        "role": "中老年在线兴趣社区：兴趣课直播+社群+小站站长模式",
+        "url": "http://www.duozhi.com/industry/insight/2025073017518.shtml",
+        "evidence_state": "verified-secondary（多知网专访+融资报道交叉）",
+        "supported_claim_ids": ["S25-C003"]
+      },
+      {
+        "name": "东犁退休俱乐部",
+        "category": "direct",
+        "role": "线下银发社交+旅游：电视栏目引流→私域→聚会/旅游/电商，江浙沪300万用户",
+        "url": "https://www.ageclub.net/article-detail/9213",
+        "evidence_state": "verified-secondary（AgeClub深度复盘+36氪融资报道）",
+        "supported_claim_ids": ["S25-C004"]
+      },
+      {
+        "name": "新东方「退休俱乐部」",
+        "category": "direct",
+        "role": "教育巨头新入局者：19.9元线下体验课切入老年兴趣教育",
+        "url": "https://www.163.com/dy/article/KJT52ELL0512D03F.html",
+        "evidence_state": "announcement-stage（2026年1月发布，业务未经验证）",
+        "supported_claim_ids": ["S25-C005"]
+      },
+      {
+        "name": "足力健",
+        "category": "direct",
+        "role": "银发实物产品（老人鞋）代表：孝心营销+重资产路径的反面样本",
+        "url": "https://www.lanjinger.com/d/1749478188718637904",
+        "evidence_state": "verified-secondary（蓝鲸/界面/亿欧多家交叉）",
+        "supported_claim_ids": ["S25-C006"]
+      },
+      {
+        "name": "公办老年大学",
+        "category": "substitutes",
+        "role": "政府办学的低价替代：300-600元/学期，一位难求，信任度最高",
+        "url": "http://www.china.com.cn/txt/2023-11/22/content_116832119.shtml",
+        "evidence_state": "verified-secondary（中国网报道+多地媒体「秒光」报道）",
+        "supported_claim_ids": ["S25-C007"]
+      },
+      {
+        "name": "子女代购+电商亲情账号",
+        "category": "substitutes",
+        "role": "实物消费的家庭采购流程：京东/淘宝/拼多多直接完成老人实物需求",
+        "url": "https://www.iyiou.com/news/202410111079711",
+        "evidence_state": "verified-secondary（京东官方报告转述）；代付比例为二手数据",
+        "supported_claim_ids": ["S25-C008", "S25-C009"]
+      },
+      {
+        "name": "平台免费内容（国家老年大学×抖音等）",
+        "category": "substitutes",
+        "role": "免费替代付费课程：官方105节精品课+海量免费短视频/直播内容",
+        "url": "https://m.bjnews.com.cn/detail/1736996973129273.html",
+        "evidence_state": "verified-secondary（新京报报道）",
+        "supported_claim_ids": ["S25-C010"]
+      },
+      {
+        "name": "传统旅行社跟团游（含低价购物团）",
+        "category": "substitutes",
+        "role": "旅游需求的存量替代：价格低但对70+设门槛，品质与适老服务缺位",
+        "url": "http://www.news.cn/20251228/88a884754f6f4ffcb27e8150de83bfae/c.html",
+        "evidence_state": "verified-primary（新华网调查+江苏消保委数据）",
+        "supported_claim_ids": ["S25-C017"]
+      },
+      {
+        "name": "抖音",
+        "category": "ecosystem",
+        "role": "银发流量第一入口之一：银龄计划扶持中老年达人，自营/合作老年教育内容",
+        "url": "https://m.bjnews.com.cn/detail/1736996973129273.html",
+        "evidence_state": "verified-secondary",
+        "supported_claim_ids": ["S25-C010", "S25-C018"]
+      },
+      {
+        "name": "视频号",
+        "category": "ecosystem",
+        "role": "微信熟人链银发流量阵地：私域信任+小程序成交，时尚奶奶团等案例粉丝百万级",
+        "url": "http://mp.weixin.qq.com/s?__biz=MzI0NDQ4NzU0Mw==&mid=2247514808&idx=1&sn=45e2bf12614932177d48770137fb00c1",
+        "evidence_state": "partial（案例数据来自微信生态报道转述，未核一手）",
+        "supported_claim_ids": ["S25-C018"]
+      },
+      {
+        "name": "美团",
+        "category": "ecosystem",
+        "role": "银发本地服务交易入口：300+城市养老服务、适老化团购、政务合作",
+        "url": "http://www.news.cn/tech/20260105/31398aee5a5449d2acab247e2c0b94e5/c.html",
+        "evidence_state": "verified-primary（新华网）",
+        "supported_claim_ids": ["S25-C011", "S25-C018"]
+      },
+      {
+        "name": "快手",
+        "category": "ecosystem",
+        "role": "下沉市场银发信任电商：50+ GMV增速1044%，联动药店/老年大学场景",
+        "url": "https://www.geekpark.net/news/353367",
+        "evidence_state": "verified-secondary（极客公园引快手财报口径）",
+        "supported_claim_ids": ["S25-C012", "S25-C018"]
+      },
+      {
+        "name": "Club Tourism（日本）",
+        "category": "benchmarks",
+        "role": "日本老年旅游标杆：年收1600亿日元、百万会员的主题细分旅游",
+        "url": "https://www.jiemian.com/article/10444372.html",
+        "evidence_state": "verified-secondary（界面案例复盘）",
+        "supported_claim_ids": ["S25-C013"]
+      },
+      {
+        "name": "Alpen / Curves（日本50+女性健身）",
+        "category": "benchmarks",
+        "role": "日本活力老人按月付费+社区门店模型：月费约6160日元、满意度95%+",
+        "url": "https://www.jiemian.com/article/3715773.html",
+        "evidence_state": "verified-secondary（界面案例复盘）",
+        "supported_claim_ids": ["S25-C014"]
+      },
+      {
+        "name": "中国宠物经济（乖宝/中宠）",
+        "category": "benchmarks",
+        "role": "国内情感型非刚需消费类比：低集中度市场跑出50亿级上市公司的路径参照",
+        "url": "https://www.jwview.com/jingwei/html/m/05-09/622159.shtml",
+        "evidence_state": "verified-primary（年报数据经中新经纬交叉）",
+        "supported_claim_ids": ["S25-C016"]
+      }
+    ],
+    "platform_bundling_check": {
+      "question": "抖音/视频号/美团的银发布局是否构成平台打包风险",
+      "verdict": "风险真实但未闭环：三家均以内容、频道、政务合作为主，未控制线下信任履约环节",
+      "claim_ids": ["S25-C010", "S25-C011", "S25-C012", "S25-C018"]
+    },
+    "japan_transferability_check": {
+      "question": "日本经验对国内的参照性",
+      "verdict": "模式可参照（细分人群+信任会员制+按月付费），定价与支付力不可照搬（未富先老，人均GDP约为日本1990年代1/3）",
+      "claim_ids": ["S25-C013", "S25-C014", "S25-C015"]
+    },
+    "sources": [
+      { "id": "S301", "tier": "T3", "title": "量子之歌的转型困境：付费人数大降，银发经济暂未挑起大梁", "url": "https://www.donews.com/article/detail/6130/82831.html", "collected": "2026-08-01", "supported_claim_ids": ["S25-C001", "S25-C002"] },
+      { "id": "S302", "tier": "T3", "title": "5年超百万付费用户，红松如何探究一代人的退休生活？（多知网）", "url": "http://www.duozhi.com/industry/insight/2025073017518.shtml", "collected": "2026-08-01", "supported_claim_ids": ["S25-C003"] },
+      { "id": "S303", "tier": "T3", "title": "9家资本押注、10亿营收：「退休俱乐部」成了银发经济新热门？（AgeClub）", "url": "https://www.ageclub.net/article-detail/9213", "collected": "2026-08-01", "supported_claim_ids": ["S25-C004"] },
+      { "id": "S304", "tier": "T2", "title": "足力健的「中年危机」：曾经年销40亿（蓝鲸新闻）", "url": "https://www.lanjinger.com/d/1749478188718637904", "collected": "2026-08-01", "supported_claim_ids": ["S25-C006"] },
+      { "id": "S305", "tier": "T2", "title": "蹭老式学习走红，老年大学为何「圈粉」00后（中国网）", "url": "http://www.china.com.cn/txt/2023-11/22/content_116832119.shtml", "collected": "2026-08-01", "supported_claim_ids": ["S25-C007"] },
+      { "id": "S306", "tier": "T2", "title": "京东《2024银发族消费报告》：银发族和年轻人在更多消费场景产生「交集」（亿欧）", "url": "https://www.iyiou.com/news/202410111079711", "collected": "2026-08-01", "supported_claim_ids": ["S25-C008"] },
+      { "id": "S307", "tier": "T2", "title": "抖音推出银龄计划，将重点扶持100位以上中老年达人（新京报）", "url": "https://m.bjnews.com.cn/detail/1736996973129273.html", "collected": "2026-08-01", "supported_claim_ids": ["S25-C010"] },
+      { "id": "S308", "tier": "T1", "title": "北京市民政局和美团签订战略合作协议（新华网）", "url": "http://www.news.cn/tech/20260105/31398aee5a5449d2acab247e2c0b94e5/c.html", "collected": "2026-08-01", "supported_claim_ids": ["S25-C011"] },
+      { "id": "S309", "tier": "T2", "title": "快手的2025：一个4亿人社区的新陈代谢（极客公园）", "url": "https://www.geekpark.net/news/353367", "collected": "2026-08-01", "supported_claim_ids": ["S25-C012"] },
+      { "id": "S310", "tier": "T2", "title": "年入1600亿日元，老年旅行社，比你想象中更赚钱（界面新闻）", "url": "https://www.jiemian.com/article/10444372.html", "collected": "2026-08-01", "supported_claim_ids": ["S25-C013"] },
+      { "id": "S311", "tier": "T2", "title": "三个案例，学习日本银发经济学（界面新闻）", "url": "https://www.jiemian.com/article/3715773.html", "collected": "2026-08-01", "supported_claim_ids": ["S25-C014"] },
+      { "id": "S312", "tier": "T2", "title": "173万亿为什么花不出去（财新专栏）", "url": "https://opinion.caixin.com/2026-07-30/102469538.html", "collected": "2026-08-01", "supported_claim_ids": ["S25-C015"] },
+      { "id": "S313", "tier": "T2", "title": "财报对对碰丨乖宝宠物VS中宠股份：宠物经济有多赚钱？（中新经纬）", "url": "https://www.jwview.com/jingwei/html/m/05-09/622159.shtml", "collected": "2026-08-01", "supported_claim_ids": ["S25-C016"] },
+      { "id": "S314", "tier": "T3", "title": "19.9元线下体验课引热议，俞敏洪开办「退休俱乐部」，老年兴趣教育赛道玩家扩容（网易/华夏时报）", "url": "https://www.163.com/dy/article/KJT52ELL0512D03F.html", "collected": "2026-08-01", "supported_claim_ids": ["S25-C005"] },
+      { "id": "S315", "tier": "T1", "title": "银发族跟团游「年龄门槛」怎么破？（新华网）", "url": "http://www.news.cn/20251228/88a884754f6f4ffcb27e8150de83bfae/c.html", "collected": "2026-08-01", "supported_claim_ids": ["S25-C017"] }
+    ]
+  }
+}

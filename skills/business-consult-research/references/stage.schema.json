@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Stage",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "stage",
+    "subject",
+    "generated_at",
+    "revision_round",
+    "score",
+    "claims",
+    "artifacts"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "enum": ["1.0"]},
+    "stage": {
+      "type": "string",
+      "enum": ["s1", "s2", "s2.5", "s3", "s4", "s5"]
+    },
+    "subject": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "minLength": 1},
+    "revision_round": {"type": "integer", "minimum": 0, "maximum": 2},
+    "score": {"type": "integer", "minimum": 1, "maximum": 10},
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/claim"}
+    },
+    "artifacts": {"type": "object"}
+  },
+  "$defs": {
+    "claim": {
+      "type": "object",
+      "required": [
+        "id",
+        "category",
+        "claim",
+        "label",
+        "confidence",
+        "source_ids",
+        "reasoning"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "category": {"type": "string", "minLength": 1},
+        "claim": {"type": "string", "minLength": 1},
+        "label": {
+          "type": "string",
+          "enum": ["[Data]", "[Estimate]", "[Assumption]", "[Opinion]"]
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low"]
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "reasoning": {"type": "string"}
+      }
+    }
+  }
+}

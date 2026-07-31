@@ -1,0 +1,331 @@
+{
+  "schema_version": "1.0",
+  "stage": "s4",
+  "subject": "中国银发经济（60+人群消费侧产品与服务）机会评估",
+  "generated_at": "2026-08-01T16:00:00+08:00",
+  "revision_round": 0,
+  "score": 8,
+  "claims": [
+    {
+      "id": "S4-C001",
+      "category": "opportunity-framing",
+      "claim": "五个候选机会方向全部从前序证据长出而非凭空构造：O1信任型老年兴趣服务来自P1信任痛点+P7使用落差+量子之歌逃离留下的信任真空（东犁复购60%+已验证付费）；O2高龄旅游/陪伴来自P5的70+系统性排斥+Club Tourism标杆；O3长护险缝隙来自S1-C018供给缺口+S2-C015福寿康模式；O4银发B端工具来自S2-C023交汇判断；O5子女护航来自P3/P8子女端痛点。",
+      "label": "[Opinion]",
+      "confidence": "high",
+      "source_ids": ["S303", "S403", "S208", "S401"],
+      "reasoning": ""
+    },
+    {
+      "id": "S4-C002",
+      "category": "ai-intervention",
+      "claim": "O1（信任型老年兴趣服务）的AI介入程度为辅助（Assist）：AI承担助教答疑、作业点评初稿、课程内容生产与运营SOP，占交付工作量60-80%；但信任建立、直播教学与情感陪伴必须真人完成——信任是本机会的核心资产，不能外包给AI。",
+      "label": "[Opinion]",
+      "confidence": "high",
+      "source_ids": ["S303", "S404"],
+      "reasoning": ""
+    },
+    {
+      "id": "S4-C003",
+      "category": "ai-efficiency",
+      "claim": "O1的AI人效杠杆估算：1名真人助教传统服务半径约200-300名学员，AI辅助答疑与作业点评后可服务800-1000名，人效约3倍；单门课程教案与练习材料研发从约5天压缩至1-2天。",
+      "label": "[Estimate]",
+      "confidence": "medium",
+      "source_ids": ["S204"],
+      "reasoning": "助教服务半径基准来自量子之歌社群运营模式报道（1助教管多群、群规模数百人）的归纳；AI替代率取矩阵辅助档定义区间60-80%的中值约70%，200-300×(1/(1-0.7))≈700-1000；课程研发压缩比按LLM生成初稿+人工审校的典型工作流估算。无行业公开基准数据，故为Estimate。"
+    },
+    {
+      "id": "S4-C004",
+      "category": "comparable-products",
+      "claim": "O1市面已有产品：千尺学堂（投流录播模式，正转型逃离）、红松（兴趣社区，1000万注册/100万付费）、新东方退休俱乐部（2026年1月19.9元线下体验课入局）、公办老年大学（300-600元/学期，一位难求）。赛道拥挤但信任定位无人占住。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S301", "S302", "S314", "S305"],
+      "reasoning": ""
+    },
+    {
+      "id": "S4-C005",
+      "category": "defensibility",
+      "claim": "O1差异化判断：以透明定价+真直播+高完课率的信任定位反量子之歌模式；防御性=信任品牌累积慢但一旦建立迁移成本高（东犁复购60%+佐证），采用摩擦=获客不能走投流捷径，需社区/内容慢积累，冷启动期现金流压力是主要风险。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": ["S303", "S203"],
+      "reasoning": ""
+    },
+    {
+      "id": "S4-C006",
+      "category": "commercial-viability",
+      "claim": "O1商业可行性：现金流模型=短周期小课包预付费+会员续费（规避长周期预付费监管风险）；客户获取难度4/5（信任型获客无低成本高意图现成渠道，需内容积累）；信任壁垒4/5（壁垒本身是护城河，但成交前信任建立周期长，需体验课+透明机制兜底）；6周MVP可行性=中（可验证完课率与续费，信任品牌本身6周建不成）。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": ["S303", "S305"],
+      "reasoning": ""
+    },
+    {
+      "id": "S4-C007",
+      "category": "comparable-products",
+      "claim": "O2（70+高龄旅游/陪伴）供给现状：传统旅行社系统性排斥70+（48.8%签免责协议、80+普遍拒收），市面已有夕阳红专线、微度假（200-300元/天）、上海乐龄乐游64条线路、一对一伴游等零散供给，但75+/80+专属且含医疗级履约的产品稀缺，空白真实存在。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S403", "S501"],
+      "reasoning": ""
+    },
+    {
+      "id": "S4-C008",
+      "category": "ai-intervention",
+      "claim": "O2的AI介入程度为增强（Enhance）：AI用于行前健康信息整理、适老行程规划、子女端实时同步播报、应急SOP检索，占信息量工作30-50%；线下履约100%真人，AI不进入安全决策环。",
+      "label": "[Opinion]",
+      "confidence": "high",
+      "source_ids": ["S501"],
+      "reasoning": ""
+    },
+    {
+      "id": "S4-C009",
+      "category": "ai-efficiency",
+      "claim": "O2的AI降本估算：定制师单案行程规划从2-3小时压缩至20-30分钟（约80%），但履约人力（导游/医护/地接）主导总成本，AI对总成本影响低于15%；AI的真实价值在子女端同步体验（差异化卖点）而非降本。",
+      "label": "[Estimate]",
+      "confidence": "medium",
+      "source_ids": ["S501"],
+      "reasoning": "行程规划压缩比按LLM生成行程初稿+人工核对的典型工作流估算；总成本影响<15%由成本结构推得：2-3天短途团成本中地接/住宿/交通/人力占绝对大头，规划环节人力占比本来就低。"
+    },
+    {
+      "id": "S4-C010",
+      "category": "commercial-viability",
+      "claim": "O2商业可行性：现金流模型=高客单服务费（适老产品溢价50-100%有报道佐证）；客户获取难度3/5（子女端短视频内容+社区渠道，意图明确但需案例积累）；信任壁垒5/5（人命安全级信任，必须保险+医疗背书+首批案例三件套兜底）；6周MVP可行性=中（可跑通1个10-15人短途试点团拿到安全履约与付费验证）。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": ["S501", "S310"],
+      "reasoning": ""
+    },
+    {
+      "id": "S4-C011",
+      "category": "comparable-products",
+      "claim": "O5（子女端父母消费护航）关键反证：支付侧监控已被免费覆盖——云闪付支付守护（大额交易同步提醒/账单授权查看）、支付宝安全守护、微信亲属卡（月限额3000元）、华为/OPPO手机远程守护（远程挂断诈骗电话/卸载可疑应用），独立监控类产品的窗口已基本关闭。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S504"],
+      "reasoning": ""
+    },
+    {
+      "id": "S4-C012",
+      "category": "opportunity-verdict",
+      "claim": "O5判定降级：剩余空间只剩机构甄别/尽调服务，但子女为甄别单独付费的意愿未获验证（S3-C014：子女实际动作是事后维权而非事前购买），且平台免费替代品强大；'没人做'的信号偏向'不值得做'而非'没注意到'。建议不做独立产品，将'子女透明看板'并入O1作为信任附属功能。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": ["S504", "S401"],
+      "reasoning": ""
+    },
+    {
+      "id": "S4-C013",
+      "category": "opportunity-verdict",
+      "claim": "O4（银发B端内容/社群工具）判定谨慎：B端小玩家的内容/运营痛点未进入S3消费者旅程验证（S3只覆盖C端双角色），通用私域工具与SOP（有赞/小鹅通/企业微信服务商）已高度商品化，'通用工具够用'是Q4摧毁测试第2问的真实威胁；银发垂直工具是'没注意到'还是'不值得做'信号混杂，需B端一手访谈才能定级。",
+      "label": "[Assumption]",
+      "confidence": "low",
+      "source_ids": ["S505"],
+      "reasoning": "O4的目标客户（银发赛道小B）不在S3定义的双角色（活力老人/子女）之内，其痛点强度、付费能力均无一手证据；私域运营SOP与工具在网上已大量免费/低价流通，差异化空间存疑。"
+    },
+    {
+      "id": "S4-C014",
+      "category": "opportunity-verdict",
+      "claim": "O3（长护险轻资产缝隙）判定不独立进入：缝隙真实存在（福寿康证明长护险托底+自费增值可盈利），但长护险定点资质、护理人力组织、区域BD三件套超出10-50万轻资产约束，独立申请定点资格不现实；可行姿势是挂靠在已有定点机构体系内做增值服务节点，更接近'加入'而非'创业进入'。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": ["S208", "S308"],
+      "reasoning": ""
+    },
+    {
+      "id": "S4-C015",
+      "category": "ranking",
+      "claim": "综合排序（公式：（成熟度+差异化空间+采用可行性）×痛点总分/15，满分15）：O1信任型老年兴趣服务10.3 > O2高龄旅游/陪伴7.3 > O4银发B端工具6.6 > O5子女护航6.6 > O3长护险缝隙5.6；O4与O5同分时按规则取采用可行性更高者（O4为4，O5为2）。",
+      "label": "[Opinion]",
+      "confidence": "medium",
+      "source_ids": [],
+      "reasoning": ""
+    },
+    {
+      "id": "S4-C016",
+      "category": "hypothesis-check",
+      "claim": "Day-1主假设最终判定：方向证实、内容修正。证实部分——窗口确实在活力老人消费而非照护刚需，信任确实是最大风险与最大资产。修正三处——①'轻资产服务型'需加'信任型'定语，投流快钱模式已被监管与用户双侧判死；②教育切口不是复制线上录播课（头部见顶逃离），而是反其道的小班真服务；③子假设1边界修正：70+高龄并非全然无窗口，'子女付费+老人使用'的错配付费在旅游场景成立（Club Tourism与携程老友会佐证），是被供给排斥制造出的第二切口。子假设3（短视频获客成本小团队可负担）全程未获直接数据，留为开放问题。",
+      "label": "[Opinion]",
+      "confidence": "high",
+      "source_ids": ["S203", "S303", "S403", "S310"],
+      "reasoning": ""
+    }
+  ],
+  "artifacts": {
+    "evaluation_method": "AI价值评估矩阵：综合分=（成熟度+差异化空间+采用可行性）×（痛点总分/15），痛点总分取自S3 pain_candidates；O3/O4痛点不在S3清单内，为推导分并标注。",
+    "opportunities": [
+      {
+        "rank": 1,
+        "name": "O1 信任型老年兴趣服务（小班真直播+高完课率+透明定价，反量子之歌模式）",
+        "mapped_pains": [{"id": "P1", "total": 14}, {"id": "P7", "total": 9}, {"id": "P4", "total": 11}],
+        "primary_pain_total": 14,
+        "user_role": "R1 活力老人（60-70岁，本人决策付费）",
+        "ai_intervention": "辅助（Assist）",
+        "step1_capability": {
+          "output_form": "课程服务（真直播+小班社群）；AI产出物=答疑文本/语音、作业点评初稿、教案与练习材料、运营SOP",
+          "model_capability": "GPT-5/Claude 4.7级文本与语音答疑可商用；书法/声乐类作业的图像与音频点评达可参考级，需人工终审",
+          "required_context_tools": "学科教案知识库（书法/声乐/八段锦）、学员作业历史、企业微信+直播工具（视频号/小鹅通）、作业图像识别",
+          "existing_products": ["千尺学堂[S301]", "红松[S302]", "新东方退休俱乐部[S314]", "公办老年大学（替代锚点）[S305]"],
+          "savings": "助教人效约3倍（200-300人→800-1000人）；课程研发5天→1-2天 [Estimate，见S4-C003]"
+        },
+        "step2_scores": {
+          "maturity": {"score": 4, "reason": "直播/社群/AI助教技术栈全部成熟，无技术不确定性"},
+          "differentiation": {"score": 4, "reason": "头部投流模式正逃离+监管清洗，信任定位真空；但红松/新东方在场，非无人区"},
+          "adoption_feasibility": {"score": 3, "reason": "老人付费意愿已验证，但信任型获客慢、冷启动现金流压力大"}
+        },
+        "step3_commercial": {
+          "cashflow_model": "短周期小课包预付费（8次课）+学期会员续费；现金流周期2-4周；规避长周期预付费监管",
+          "customer_acquisition_difficulty": {"score": 4, "note": "无现成低成本高意图渠道；验证方式：视频号内容+社区合作各跑4周，测体验课报名成本"},
+          "trust_barrier": {"score": 4, "note": "兜底机制：低价体验课+价格一口价公示+随时退费承诺+完课率数据公开"},
+          "six_week_mvp": "中：6周可交付首个小班验证完课率与续费意向，但信任品牌资产需6-12个月累积"
+        },
+        "composite_score": 10.3,
+        "differentiation_judgment": "不与投流模式比规模，与公办老年大学比可得性（一位难求）与体验（作品反馈）；信任是卖点也是壁垒",
+        "mvp_form": "服务+工具（真人小班课为体，AI助教/点评/看板为用）",
+        "claim_ids": ["S4-C002", "S4-C003", "S4-C004", "S4-C005", "S4-C006"]
+      },
+      {
+        "rank": 2,
+        "name": "O2 70+高龄旅游/陪伴服务（被系统性排斥的空白，子女付费+老人使用）",
+        "mapped_pains": [{"id": "P5", "total": 10}],
+        "primary_pain_total": 10,
+        "user_role": "R1使用（70-80+老人）+R2付费决策（异地子女）",
+        "ai_intervention": "增强（Enhance）",
+        "step1_capability": {
+          "output_form": "线下旅游服务；AI产出物=健康评估整理、适老行程方案、子女端实时同步播报、应急SOP检索结果",
+          "model_capability": "行程规划与健康问卷结构化整理可商用；安全决策不交给AI",
+          "required_context_tools": "适老目的地/无障碍设施数据库、慢病出行禁忌知识库、应急预案库、定位/照片同步工具",
+          "existing_products": ["传统旅行社（排斥70+）[S403]", "夕阳红专线/微度假/乐龄乐游等零散供给[S501]", "携程老友会（平台型，主打活力老人）[S212]", "Club Tourism日本标杆[S310]"],
+          "savings": "行程定制2-3小时→20-30分钟；但对总成本影响<15%，AI价值在子女端同步体验而非降本 [Estimate，见S4-C009]"
+        },
+        "step2_scores": {
+          "maturity": {"score": 3, "reason": "AI部分成熟，但产品主体是线下重履约，无技术捷径"},
+          "differentiation": {"score": 5, "reason": "75+/80+专属+医疗级履约为系统性空白，携程老友会尚未下探到该年龄段"},
+          "adoption_feasibility": {"score": 3, "reason": "需挂靠旅行社资质+责任险+医护网络，安全责任重；但客单高、试点团规模小即可验证"}
+        },
+        "step3_commercial": {
+          "cashflow_model": "高客单服务费（溢价50-100%有报道佐证[S501]），先收款后出团，现金流健康",
+          "customer_acquisition_difficulty": {"score": 3, "note": "子女端短视频内容（带爸妈旅行主题）+社区渠道；验证方式：首团招募成本与转化率实测"},
+          "trust_barrier": {"score": 5, "note": "兜底三件套：旅行社责任险+随团医护+首团全程纪录片式透明播报；前3团不盈利也要把案例做出来"},
+          "six_week_mvp": "中：6周可完成1个10-15人2天1晚试点团，验证安全履约、子女付费与NPS"
+        },
+        "composite_score": 7.3,
+        "differentiation_judgment": "不做银发旅游大盘（携程已占），只做携程和传统社都不敢接的75+医疗级履约段",
+        "mvp_form": "服务（线下团为体，AI规划/同步工具为用）",
+        "claim_ids": ["S4-C007", "S4-C008", "S4-C009", "S4-C010"]
+      },
+      {
+        "rank": 3,
+        "name": "O4 银发内容/社群工具（服务B端小玩家）",
+        "mapped_pains": [{"id": "derived-B端痛点", "total": 9, "note": "[Assumption] B端痛点未入S3清单，推导分"}],
+        "primary_pain_total": 9,
+        "user_role": "银发赛道小B（线下老年大学运营商/旅居创业公司/银发KOL）",
+        "ai_intervention": "辅助-替代（内容生产环节可达Replace）",
+        "step1_capability": {
+          "output_form": "SaaS/工具：银发内容模板、社群运营SOP、投流素材合规审查",
+          "model_capability": "内容生成与合规文本审查可商用",
+          "required_context_tools": "银发内容案例库、监管处罚案例库（4516件专项整治样本）、平台规则库",
+          "existing_products": ["通用私域SaaS与运营SOP已高度商品化（有赞/小鹅通/企业微信服务商）[S505]", "银发垂直工具未见专门玩家"],
+          "savings": "内容生产成本可降50-80%（通用AI工具已能实现，非本产品独有）[Estimate]"
+        },
+        "step2_scores": {
+          "maturity": {"score": 4, "reason": "技术完全成熟"},
+          "differentiation": {"score": 3, "reason": "垂直差异在合规知识库与银发语料，但通用工具'够用'威胁真实（Q4摧毁测试第2问）"},
+          "adoption_feasibility": {"score": 4, "reason": "工具即买即用、摩擦低；但小B付费能力弱、客单价低"}
+        },
+        "step3_commercial": {
+          "cashflow_model": "SaaS订阅（月费百元级）或模板一次性售卖；客单低需走量",
+          "customer_acquisition_difficulty": {"score": 3, "note": "可在银发创业社群/行业展会低成本触达；但目标客户盘子小且分散"},
+          "trust_barrier": {"score": 2, "note": "工具类决策轻，试用即可"},
+          "six_week_mvp": "高：内容模板库+合规审查Skill六周可上线收费"
+        },
+        "composite_score": 6.6,
+        "differentiation_judgment": "差异化不清晰，标记待验证：需10个以上B端一手访谈确认痛点与付费意愿后才能定级",
+        "mvp_form": "SaaS/Skill",
+        "claim_ids": ["S4-C013"]
+      },
+      {
+        "rank": 4,
+        "name": "O5 子女端父母消费护航/机构甄别",
+        "mapped_pains": [{"id": "P3", "total": 11}, {"id": "P8", "total": 9}],
+        "primary_pain_total": 11,
+        "user_role": "R2 子女（40-55岁）",
+        "ai_intervention": "增强（尽调报告生成/风险预警）",
+        "step1_capability": {
+          "output_form": "机构甄别报告、消费异常预警",
+          "model_capability": "工商/投诉/处罚数据聚合与报告生成可商用",
+          "required_context_tools": "企业征信API、黑猫投诉/行政处罚数据、支付侧数据（不可得——平台封闭）",
+          "existing_products": ["云闪付支付守护/支付宝安全守护/微信亲属卡/华为OPPO远程守护——全部免费[S504]", "独立甄别服务未见"],
+          "savings": "单次尽调从数小时降至分钟级，但需求频次低、付费意愿未验证 [Estimate]"
+        },
+        "step2_scores": {
+          "maturity": {"score": 4, "reason": "报告生成技术成熟"},
+          "differentiation": {"score": 3, "reason": "监控面被平台免费覆盖，只剩甄别窄缝"},
+          "adoption_feasibility": {"score": 2, "reason": "付费意愿未验证+支付数据不可得+免费替代强，采用摩擦高"}
+        },
+        "step3_commercial": {
+          "cashflow_model": "单次尽调付费或家庭订阅；均为假设，无验证",
+          "customer_acquisition_difficulty": {"score": 4, "note": "触发场景（父母被骗后）与付费场景（事前预防）错配"},
+          "trust_barrier": {"score": 3, "note": "甄别服务本身也需被信任，冷启动悖论"},
+          "six_week_mvp": "中：报告生成器可做，但验证不了付费意愿这个核心问题"
+        },
+        "composite_score": 6.6,
+        "differentiation_judgment": "判定：不做独立产品。'没人做'主因是不值得做（平台免费覆盖+付费意愿弱）；其'子女透明'需求并入O1作为信任附属功能（出勤/作品/费用透明看板）",
+        "mvp_form": "不立项",
+        "claim_ids": ["S4-C011", "S4-C012"]
+      },
+      {
+        "rank": 5,
+        "name": "O3 长护险体系内轻资产缝隙（居家照护增值服务节点）",
+        "mapped_pains": [{"id": "derived-照护供给缺口", "total": 12, "note": "[Estimate] 来自S1-C018结构缺口，非S3消费者痛点，推导分"}],
+        "primary_pain_total": 12,
+        "user_role": "失能/半失能老人家庭+长护险定点机构",
+        "ai_intervention": "辅助（照护记录/合规文书/排班）",
+        "step1_capability": {
+          "output_form": "照护服务（人力为体）+管理工具",
+          "model_capability": "文书与排班自动化可商用，但非价值核心",
+          "required_context_tools": "长护险政策与结算规则库、护理SOP、定点资质",
+          "existing_products": ["福寿康（头部已盈利）[S208]", "美团300城3万家机构聚合入口[S308]"],
+          "savings": "AI对劳动密集型履约降本有限（<10%）[Estimate]"
+        },
+        "step2_scores": {
+          "maturity": {"score": 3, "reason": "AI部分成熟，主体是人力服务"},
+          "differentiation": {"score": 3, "reason": "缝隙真实但福寿康等已卡位，缝隙在依附而非独立"},
+          "adoption_feasibility": {"score": 1, "reason": "定点资质+护理人力+区域BD三件套超出10-50万预算与1-10人团队约束"}
+        },
+        "step3_commercial": {
+          "cashflow_model": "长护险结算（回款周期长）+自费增值；现金流慢",
+          "customer_acquisition_difficulty": {"score": 4, "note": "依赖社区/医院渠道与定点资格"},
+          "trust_barrier": {"score": 5, "note": "入户照护信任要求极高"},
+          "six_week_mvp": "低：6周内无法获得任何合规履约资格"
+        },
+        "composite_score": 5.6,
+        "differentiation_judgment": "判定：不独立进入。缝隙真实但正确姿势是挂靠已有定点机构做增值服务节点；保留为O2的远期照护延伸选项",
+        "mvp_form": "不独立立项",
+        "claim_ids": ["S4-C014"]
+      }
+    ],
+    "ranking_summary": ["O1=10.3", "O2=7.3", "O4=6.6", "O5=6.6", "O3=5.6"],
+    "day1_hypothesis_final_check": {
+      "hypothesis_file": "01-day1-hypothesis.md",
+      "verdict": "方向证实、内容修正（详见S4-C016）",
+      "sub_hypotheses": [
+        {"n": 1, "statement": "付费主力是60-70活力老人", "verdict": "证实（S3已判），边界修正：70+旅游场景子女付费成立"},
+        {"n": 2, "statement": "老年教育付费模型已跑通", "verdict": "部分证实：量子之歌盈利但模式封顶逃离；红松100万付费佐证需求真实"},
+        {"n": 3, "statement": "短视频获客成本小团队可负担", "verdict": "未验证：全程无单线索成本一手数据，留开放问题"},
+        {"n": 4, "statement": "照护刚需对小团队基本关闭", "verdict": "证实并强化：S4确认连轻资产缝隙也需依附定点机构，独立进入不可行"},
+        {"n": 5, "statement": "适老产品被巨头白牌夹击窗口窄", "verdict": "证实（足力健案例）"},
+        {"n": 6, "statement": "最大风险是信任", "verdict": "证实且超预期，并反转为机会：信任真空正是O1的定位空间"}
+      ],
+      "claim_ids": ["S4-C016"]
+    },
+    "sources": [
+      {"id": "S501", "tier": "T3", "title": "养老轻资产创业模式深度盘点（城乡社区社会管理湖北省协同创新中心）", "url": "http://www.smjic.org/index.php/View/959.html", "collected": "2026-08-01", "supported_claim_ids": ["S4-C007", "S4-C008", "S4-C009", "S4-C010"]},
+      {"id": "S502", "tier": "T3", "title": "银发教育市场突围战：民办老年大学如何破解'盈利难'困局（AgeClub）", "url": "https://ageclub.net/article-detail/5735", "collected": "2026-08-01", "supported_claim_ids": []},
+      {"id": "S503", "tier": "T2", "title": "银发科技新蓝海：老年陪伴机器人千亿市场突围（网易/AgeClub，含AI陪伴硬件闲置率与复购数据）", "url": "https://www.163.com/dy/article/JRL4O66V05385HGT.html", "collected": "2026-08-01", "supported_claim_ids": []},
+      {"id": "S504", "tier": "T2", "title": "长辈防骗怎么选支付工具？三款主流产品反诈适老能力全解析（新华报业）", "url": "https://www.xhby.net/content/s6a6b11cee4b0eb7bb0f9aa8d.html", "collected": "2026-08-01", "supported_claim_ids": ["S4-C011", "S4-C012"]},
+      {"id": "S505", "tier": "T3", "title": "在线教育私域流量运营方案（附具体私域运营管理流程）（家益私域）", "url": "https://www.jiayisiyu.com/news/29", "collected": "2026-08-01", "supported_claim_ids": ["S4-C013"]}
+    ],
+    "collection_notes": "S502/S503为过程性采集：S502佐证民办老年大学盈利难（支持O1需差异化定价定位的判断，已在S4-C005覆盖，未单列claim）；S503佐证纯AI陪伴硬件复购率<5%、C端渗透低，支持'AI不做信任主体只做辅助'的介入定位（已并入S4-C002），未单列claim。"
+  }
+}

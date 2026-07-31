@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0",
+  "stage": "s3",
+  "subject": "中国银发经济（60+人群消费侧产品与服务）用户旅程与痛点",
+  "generated_at": "2026-08-01T11:00:00+08:00",
+  "revision_round": 0,
+  "score": 7,
+  "claims": [
+    {
+      "id": "S3-C001",
+      "category": "verbatim-evidence",
+      "claim": "老年课堂骗局的引流与转化话术已被官方媒体逐字记录：以「9.9元卖书送免费声乐课」引流，体验课后助教打亲情牌：「知道您舍不得2580元，但我想让您有一个幸福快乐的晚年」。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S401"],
+      "reasoning": ""
+    },
+    {
+      "id": "S3-C002",
+      "category": "verbatim-evidence",
+      "claim": "湖北日报记录三个真实案例：72岁李玲称「一开始说是免费体验，结果很快就开始卖课了」并被连环升级推销；68岁张军花近万元买「包治百病」保健品后不适，退款被拒；65岁王晓峰被诱导以1.5万元「内部价」买相机并办理分期，称「我现在真是骑虎难下，既学不到东西，还要还贷款」。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S402"],
+      "reasoning": ""
+    },
+    {
+      "id": "S3-C003",
+      "category": "pain-evidence",
+      "claim": "退费维权成功率低：新华视点称「只有少数受害老人的家属通过12315、消费者权益保护平台、黑猫投诉等方式追回课程费用」，多数老人自认「花钱买教训」。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S401"],
+      "reasoning": ""
+    },
+    {
+      "id": "S3-C004",
+      "category": "pain-evidence",
+      "claim": "黑猫投诉平台上「千尺」相关投诉超千条，集中在直播课实为录播、诱导消费、退费难；量子之歌旗下启牛学堂累计投诉超5000条；行业内千尺学堂、红松学堂被指完课率不足30%。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S404"],
+      "reasoning": ""
+    },
+    {
+      "id": "S3-C005",
+      "category": "pain-evidence",
+      "claim": "银发旅游存在系统性准入歧视：江苏省消保委调查显示48.8%的老年游客被要求签署额外免责协议、37.8%需强制家属陪同、22.9%需提供健康证明；有子女称「父母退休后喜欢旅行，但是到了70岁，想要再长途游玩就难了」「过了80岁，就没旅行社接收了」。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S403"],
+      "reasoning": ""
+    },
+    {
+      "id": "S3-C006",
+      "category": "regulation",
+      "claim": "监管已系统性介入「坑老」快钱模型：市场监管总局老年人药品保健品虚假宣传专项整治查办违法案件4516件、罚没6876.91万元、责令3611家主体整改；上海私域直播专项整治立案83起、单案最高罚35万元；微信2025年3月公告治理「养生直播」违规引流。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S405", "S406"],
+      "reasoning": ""
+    },
+    {
+      "id": "S3-C007",
+      "category": "user-behavior",
+      "claim": "京东《2024银发族消费报告》：60.7%的银发族平均每天手机上网超3小时，仅2.6%极少上网，活力老人的线上触达已不存在基础设施障碍。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S407"],
+      "reasoning": ""
+    },
+    {
+      "id": "S3-C008",
+      "category": "user-behavior",
+      "claim": "付费主力画像指向活力老人本人：红松注册用户破1000万、5年付费用户超100万，客群为刚退休人群；界面报道九成中老年选择线上学习、学员最高年消费超7万元。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S410", "S411"],
+      "reasoning": ""
+    },
+    {
+      "id": "S3-C009",
+      "category": "pain-evidence",
+      "claim": "算法驱动的被动付费是子女端高频痛点：中消协点名短视频平台用算法锁定老年人推送微短剧、默认免密支付按集扣费；中新经纬记录63岁母亲看短剧累计消费数千元的案例。",
+      "label": "[Data]",
+      "confidence": "medium",
+      "source_ids": ["S409"],
+      "reasoning": ""
+    },
+    {
+      "id": "S3-C010",
+      "category": "price-evidence",
+      "claim": "公办老年大学每学期收费约300-600元（15次课），师资与信任度有政府背书，是活力老人教育需求的底价锚点。",
+      "label": "[Data]",
+      "confidence": "high",
+      "source_ids": ["S408"],
+      "reasoning": ""
+    },
+    {
+      "id": "S3-C011",
+      "category": "price-evidence",
+      "claim": "活力老人正价兴趣课客单价集中在千元级：千尺学堂书法课原价4680元（促销可降至1080元），红松付费学习群从几元到几千元不等，价格不透明与跳水本身是信任损耗点。",
+      "label": "[Estimate]",
+      "confidence": "medium",
+      "source_ids": ["S404", "S410"],
+      "reasoning": "4680→1080元的价格跳水来自媒体对量子之歌销售话术的报道，红松价格带来自多知网专访；「千元级集中」是对两个样本的归纳，未见全市场客单价分布数据。"
+    },
+    {
+      "id": "S3-C012",
+      "category": "hypothesis-check",
+      "claim": "Day-1假设1（付费主力是60-70岁活力老人而非80+高龄老人）：证实。线上兴趣课、银发旅游、兴趣社区的付费主体均为刚退休、本人决策、自主支付的活力老人；80+人群消费由子女/机构代理且被传统供给（旅行社）排斥。",
+      "label": "[Opinion]",
+      "confidence": "high",
+      "source_ids": ["S403", "S410", "S411"],
+      "reasoning": "红松/东犁/千尺客群画像+旅游年龄门槛证据交叉指向同一结论。"
+    },
+    {
+      "id": "S3-C013",
+      "category": "hypothesis-check",
+      "claim": "Day-1假设6（最大风险不是需求而是信任）：证实且程度超预期。信任损耗贯穿旅程每一步（引流话术、价格跳水、录播冒充直播、退费难、完课率低），并已引发市监总局专项整治与平台治理，快钱收割模型同时面对行政罚没与刑事化风险。",
+      "label": "[Opinion]",
+      "confidence": "high",
+      "source_ids": ["S401", "S402", "S404", "S405", "S406"],
+      "reasoning": "用户侧投诉量级+监管侧立案数据双侧印证。"
+    },
+    {
+      "id": "S3-C014",
+      "category": "open-question",
+      "claim": "子女端存在「帮父母甄别机构/远程监护」的高频痛点，但子女为「甄别服务」单独付费的意愿未获验证；现有证据显示子女的实际动作是事后维权（12315/黑猫）而非事前购买甄别服务。",
+      "label": "[Assumption]",
+      "confidence": "low",
+      "source_ids": ["S401"],
+      "reasoning": "由新华视点「家属通过12315追回费用」反推：事前甄别需求存在但付费形态未出现，需S4或一手访谈验证。"
+    }
+  ],
+  "artifacts": {
+    "role_stage_matrix": {
+      "stages": ["场景触发", "搜索了解", "信任建立", "决策", "付费", "使用", "复购/弃用"],
+      "roles": [
+        {
+          "role": "R1 活力老人（60-70岁，本人决策）",
+          "matrix": ["主", "主", "主", "主", "主", "主", "主"],
+          "note": "全旅程主决策人；子女仅在出事后介入"
+        },
+        {
+          "role": "R2 子女（40-55岁，代付/监护决策）",
+          "matrix": ["辅（发现扣款/主动尽孝）", "主（帮父母甄别）", "辅（背书或否决）", "主（代付场景）", "主（代付场景）", "辅（远程监护）", "主（维权/劝阻续费）"],
+          "note": "实物代付与事后维权的主导者；服务类消费多在事后介入"
+        }
+      ]
+    },
+    "journeys": [
+      {
+        "role": "R1 活力老人（以线上兴趣课为例）",
+        "steps": [
+          { "n": 1, "action": "刷短视频或被同伴邀请，触发兴趣", "detail": "抖音/视频号算法推送书法、声乐、养生内容；熟人转发是强触发", "pain_refs": [] },
+          { "n": 2, "action": "点进直播间/公众号，领免费或9.9元体验课", "detail": "低价引流是行业标准动作（「9.9元卖书送免费声乐课」）", "pain_refs": ["P4"] },
+          { "n": 3, "action": "加助教微信入群，接受陪伴式运营", "detail": "助教打亲情牌建立信任：「知道您舍不得2580元，但我想让您有一个幸福快乐的晚年」", "pain_refs": ["P1", "P4"] },
+          { "n": 4, "action": "比价、问同伴，犹豫是否升级正价课", "detail": "价格不透明：同一课程4680元可逐级降至1080元；公办老年大学300-600元/学期是心理锚点", "pain_refs": ["P4", "P6"] },
+          { "n": 5, "action": "微信转账或分期付费，常不告知子女", "detail": "部分被诱导贷款分期（1.5万元相机案例）；免密支付放大被动扣费", "pain_refs": ["P1"] },
+          { "n": 6, "action": "上课使用，体验常与承诺有落差", "detail": "直播变录播、名师缩水；行业完课率被指不足30%", "pain_refs": ["P7"] },
+          { "n": 7, "action": "复购高阶课，或退费维权/默默弃用", "detail": "退费成功率低，多数自认「花钱买教训」；少数家属经12315/黑猫追回", "pain_refs": ["P2"] }
+        ]
+      },
+      {
+        "role": "R2 子女（代付与监护视角）",
+        "steps": [
+          { "n": 1, "action": "发现父母被扣款/被推销，或想主动尽孝", "detail": "广西陈女士在父母手机发现3笔课程扣款；短剧免密扣费数千元是典型触发", "pain_refs": ["P3"] },
+          { "n": 2, "action": "搜索「XX机构是不是骗局」「老年大学哪家好」", "detail": "信息混杂，广告与投诉并存，甄别成本高", "pain_refs": ["P3"] },
+          { "n": 3, "action": "查资质、问朋友、翻投诉平台做尽调", "detail": "部分机构经营范围不含教育培训、注册地无实体，「课程扣费、售后保障难以追溯」", "pain_refs": ["P3", "P1"] },
+          { "n": 4, "action": "决定代付、陪同报名或劝阻", "detail": "实物类代付顺畅（亲情账号），服务类缺少可信购买入口", "pain_refs": ["P8"] },
+          { "n": 5, "action": "远程代付或线下陪同缴费", "detail": "异地是常态，无法陪同上课/参团", "pain_refs": ["P3"] },
+          { "n": 6, "action": "远程监督使用，出问题后处理售后", "detail": "退费维权耗时，成功率低", "pain_refs": ["P2"] },
+          { "n": 7, "action": "续费放行，或拉黑机构并加强管控", "detail": "一次被骗经历导致对整个品类信任归零，殃及合规玩家", "pain_refs": ["P1"] }
+        ]
+      }
+    ],
+    "pain_candidates": [
+      {
+        "id": "P1",
+        "name": "信任建立难骗局混杂",
+        "role": "R1+R2",
+        "journey_step": "信任建立（R1步骤3 / R2步骤3）",
+        "tests_met": ["失败率", "经验依赖"],
+        "frequency": 4, "impact": 5, "resolution_cost": 5, "total": 14,
+        "evidence": "亲情牌话术逐字记录[S401]；三案例被骗金额数千至万元[S402]；黑猫投诉千条级[S404]；监管查办4516件[S406]",
+        "verbatim": "「知道您舍不得2580元，但我想让您有一个幸福快乐的晚年」",
+        "claim_ids": ["S3-C001", "S3-C002", "S3-C004", "S3-C006"]
+      },
+      {
+        "id": "P2",
+        "name": "退费维权难",
+        "role": "R1+R2",
+        "journey_step": "复购/弃用（R1步骤7 / R2步骤6）",
+        "tests_met": ["失败率", "当前解决成本高"],
+        "frequency": 3, "impact": 4, "resolution_cost": 5, "total": 12,
+        "evidence": "仅少数家属经12315/黑猫追回费用，多数自认倒霉[S401]",
+        "verbatim": "「只有少数受害老人的家属通过12315、消费者权益保护平台、黑猫投诉等方式追回课程费用」",
+        "claim_ids": ["S3-C003"]
+      },
+      {
+        "id": "P3",
+        "name": "子女异地甄别难",
+        "role": "R2",
+        "journey_step": "搜索了解/信任建立（R2步骤2-3）",
+        "tests_met": ["经验依赖", "时间消耗"],
+        "frequency": 4, "impact": 4, "resolution_cost": 3, "total": 11,
+        "evidence": "机构资质瑕疵普遍（经营范围不含培训、无实体）[S401]；子女事后才发现扣款[S401][S409]",
+        "verbatim": "「课程扣费、售后保障难以追溯」",
+        "claim_ids": ["S3-C014"]
+      },
+      {
+        "id": "P4",
+        "name": "价格不透明跳水",
+        "role": "R1",
+        "journey_step": "决策（R1步骤4）",
+        "tests_met": ["失败率", "经验依赖"],
+        "frequency": 4, "impact": 4, "resolution_cost": 3, "total": 11,
+        "evidence": "课程4680元逐级降至1080元，客服称「不同活动」[S404]；公办300-600元/学期锚点反差[S408]",
+        "verbatim": "「一开始说是免费体验，结果很快就开始卖课了」",
+        "claim_ids": ["S3-C002", "S3-C011"]
+      },
+      {
+        "id": "P5",
+        "name": "高龄旅游被设门槛",
+        "role": "R1",
+        "journey_step": "场景触发-决策（旅游场景全程）",
+        "tests_met": ["失败率", "当前解决成本高"],
+        "frequency": 3, "impact": 4, "resolution_cost": 3, "total": 10,
+        "evidence": "48.8%被要求签免责协议、37.8%强制家属陪同、80岁以上普遍拒收[S403]",
+        "verbatim": "「过了80岁，就没旅行社接收了」",
+        "claim_ids": ["S3-C005"]
+      },
+      {
+        "id": "P6",
+        "name": "公办供给一位难求",
+        "role": "R1",
+        "journey_step": "搜索了解（R1步骤2替代路径）",
+        "tests_met": ["失败率", "时间消耗"],
+        "frequency": 4, "impact": 3, "resolution_cost": 2, "total": 9,
+        "evidence": "公办老年大学300-600元/学期但多地报道报名「秒杀」「一座难求」[S408]",
+        "verbatim": "",
+        "claim_ids": ["S3-C010"]
+      },
+      {
+        "id": "P7",
+        "name": "使用落差录播充直播",
+        "role": "R1",
+        "journey_step": "使用（R1步骤6）",
+        "tests_met": ["失败率", "经验依赖"],
+        "frequency": 3, "impact": 4, "resolution_cost": 2, "total": 9,
+        "evidence": "直播课实为录播、名师缩水为投诉高频项；行业完课率被指不足30%[S404]",
+        "verbatim": "",
+        "claim_ids": ["S3-C004"]
+      },
+      {
+        "id": "P8",
+        "name": "不知买啥怕买错",
+        "role": "R2",
+        "journey_step": "决策（R2步骤4）",
+        "tests_met": ["经验依赖", "时间消耗"],
+        "frequency": 3, "impact": 3, "resolution_cost": 3, "total": 9,
+        "evidence": "[Assumption] 实物代付有亲情账号支撑，但服务型礼物（课程/旅游/陪伴）缺少可信购买入口；未找到子女端直接语料",
+        "verbatim": "",
+        "claim_ids": ["S3-C014"]
+      }
+    ],
+    "day1_hypothesis_check": {
+      "hypothesis_1": {
+        "statement": "付费主力是60-70岁活力老人，不是80+高龄老人",
+        "verdict": "证实",
+        "evidence_claim_ids": ["S3-C008", "S3-C005", "S3-C012"]
+      },
+      "hypothesis_6": {
+        "statement": "最大风险不是需求而是信任；快钱模型已被监管与平台压制",
+        "verdict": "证实（程度超预期：监管已规模化立案处罚）",
+        "evidence_claim_ids": ["S3-C001", "S3-C004", "S3-C006", "S3-C013"]
+      }
+    },
+    "sources": [
+      { "id": "S401", "tier": "T1", "title": "新华视点丨揭秘老年课堂骗局套路", "url": "http://www.news.cn/20251231/bdc84b97303f44b7b2d88fd68fb4b2c2/c.html", "collected": "2026-08-01", "supported_claim_ids": ["S3-C001", "S3-C003", "S3-C014"] },
+      { "id": "S402", "tier": "T2", "title": "卖课卖药卖相机……一些「老年大学」怎就沦为推销场？（湖北日报）", "url": "https://news.hubeidaily.net/pc/c_3634142.html", "collected": "2026-08-01", "supported_claim_ids": ["S3-C002"] },
+      { "id": "S403", "tier": "T1", "title": "银发族跟团游「年龄门槛」怎么破？（新华网）", "url": "http://www.news.cn/20251228/88a884754f6f4ffcb27e8150de83bfae/c.html", "collected": "2026-08-01", "supported_claim_ids": ["S3-C005", "S3-C012"] },
+      { "id": "S404", "tier": "T2", "title": "老人精神需求被各种「营销课程」填满，谁来守护老年人的钱袋子？（澎湃号·湃客/蓝鲸）", "url": "https://m.thepaper.cn/newsDetail_forward_30393759", "collected": "2026-08-01", "supported_claim_ids": ["S3-C004", "S3-C011"] },
+      { "id": "S405", "tier": "T2", "title": "阻断私域直播精准「围猎」老年人骗局（中国青年报）", "url": "http://m.cyol.com/gb/articles/2025-10/15/content_4wyBeocWlQ.html", "collected": "2026-08-01", "supported_claim_ids": ["S3-C006"] },
+      { "id": "S406", "tier": "T2", "title": "市场监管部门重拳整治私域直播乱象 全力守护老年人消费安全（网易转载市监总局数据）", "url": "https://www.163.com/dy/article/KBVVVA4R0519A8ON.html", "collected": "2026-08-01", "supported_claim_ids": ["S3-C006"] },
+      { "id": "S407", "tier": "T2", "title": "京东《2024银发族消费报告》（亿欧转述）", "url": "https://www.iyiou.com/news/202410111079711", "collected": "2026-08-01", "supported_claim_ids": ["S3-C007"] },
+      { "id": "S408", "tier": "T2", "title": "蹭老式学习走红，老年大学为何「圈粉」00后（中国网）", "url": "http://www.china.com.cn/txt/2023-11/22/content_116832119.shtml", "collected": "2026-08-01", "supported_claim_ids": ["S3-C010"] },
+      { "id": "S409", "tier": "T2", "title": "微短剧付费陷阱套住中老年人（中新经纬）", "url": "https://www.jwview.com/jingwei/html/m/11-04/610038.shtml", "collected": "2026-08-01", "supported_claim_ids": ["S3-C009"] },
+      { "id": "S410", "tier": "T3", "title": "5年超百万付费用户，红松如何探究一代人的退休生活？（多知网）", "url": "http://www.duozhi.com/industry/insight/2025073017518.shtml", "collected": "2026-08-01", "supported_claim_ids": ["S3-C008", "S3-C011"] },
+      { "id": "S411", "tier": "T2", "title": "九成中老年选择线上学习，学员最高年消费超7万元，银发在线教育迎来新机遇（界面新闻）", "url": "https://www.jiemian.com/article/11439261.html", "collected": "2026-08-01", "supported_claim_ids": ["S3-C008"] }
+    ]
+  }
+}

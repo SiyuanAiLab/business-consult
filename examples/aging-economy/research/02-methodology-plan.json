@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "skill": "research",
+  "project": "aging-economy-demo",
+  "question": "中国独立创业者/小团队（1-10 人、10-50 万可投入资金）该不该进入银发经济；若进，从哪个细分切、以什么姿势切",
+  "mode": "live",
+  "frameworks": [
+    "questioning-chain",
+    "day1-hypothesis",
+    "quota-landscape-scan",
+    "user-journey",
+    "horizontal-vertical-analysis",
+    "ai-value-evaluation",
+    "product-system-blueprint",
+    "syntax-cross-validation"
+  ],
+  "stages": ["s1", "s2", "s2.5", "s3", "s4", "s5", "s6"],
+  "gates": {
+    "stop_check": true,
+    "claim_labels": ["[Data]", "[Estimate]", "[Assumption]", "[Opinion]"],
+    "repair_loop_max": 2
+  }
+}
