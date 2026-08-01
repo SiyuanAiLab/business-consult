@@ -1,0 +1,4 @@
+interface:
+  display_name: "Business Question Framing"
+  short_description: "Ask one question per turn and hand validated scope to research"
+  default_prompt: "Use $diagnose to frame this business question one response-gated step at a time, persist a recoverable session, and hand only validated completed scope to research."

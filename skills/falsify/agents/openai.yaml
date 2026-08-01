@@ -1,0 +1,4 @@
+interface:
+  display_name: "商业结论证伪"
+  short_description: "对高影响商业结论执行预注册对抗检索、不可变输入审计与三态独立裁决"
+  default_prompt: "Use $falsify to preregister and adversarially test high-impact research claims without modifying upstream files."

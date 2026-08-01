@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Falsify preregistration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project", "generated_at", "input_manifest", "claims"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "minLength": 1},
+    "input_manifest": {
+      "type": "array",
+      "minItems": 11,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "claim_hash", "exact_claim", "impact_areas", "falsification_criterion", "adversarial_query_plan", "source_budget", "unresolved_conditions", "planned_query_count"],
+        "properties": {
+          "claim_id": {"type": "string", "minLength": 1},
+          "claim_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "exact_claim": {"type": "string", "minLength": 1},
+          "impact_areas": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "falsification_criterion": {"type": "string", "minLength": 1},
+          "adversarial_query_plan": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["round", "queries"],
+              "properties": {
+                "round": {"type": "integer", "minimum": 1, "maximum": 2},
+                "queries": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+              }
+            }
+          },
+          "source_budget": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["max_opened_sources", "max_rounds"],
+            "properties": {
+              "max_opened_sources": {"type": "integer", "minimum": 1},
+              "max_rounds": {"type": "integer", "minimum": 1, "maximum": 2}
+            }
+          },
+          "unresolved_conditions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "planned_query_count": {"type": "integer", "minimum": 1}
+        }
+      }
+    }
+  }
+}

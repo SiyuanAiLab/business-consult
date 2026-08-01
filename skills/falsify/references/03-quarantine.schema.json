@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Falsify quarantine audit index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project", "generated_at", "verdict_sha256", "entries"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "minLength": 1},
+    "verdict_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "claim_hash", "status", "original_claim_path", "counterevidence_refs", "action", "original_preserved"],
+        "properties": {
+          "claim_id": {"type": "string", "minLength": 1},
+          "claim_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "status": {"const": "falsified"},
+          "original_claim_path": {"const": "research/11-claim-register.json"},
+          "counterevidence_refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["attempt_id", "url", "title"],
+              "properties": {
+                "attempt_id": {"type": "string", "minLength": 1},
+                "url": {"type": "string", "pattern": "^https?://"},
+                "title": {"type": "string", "minLength": 1}
+              }
+            }
+          },
+          "action": {"const": "audit-reference-only"},
+          "original_preserved": {"const": true}
+        }
+      }
+    }
+  }
+}

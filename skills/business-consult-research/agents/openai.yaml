@@ -1,4 +1,4 @@
 interface:
   display_name: "商业调研"
   short_description: "Traceable, resumable commercial research packages"
-  default_prompt: "Use $research to investigate this industry and produce a traceable research package."
+  default_prompt: "Use $business-consult-research to investigate this industry and produce a traceable research package."

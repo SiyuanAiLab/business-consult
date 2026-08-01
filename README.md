@@ -1,80 +1,93 @@
 # Business Consult Skills
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/SiyuanAiLab/business-consult)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/SiyuanAiLab/business-consult)
 
-**AI-written business research you can actually audit: every claim carries an honesty label, every number carries a source, and the search doesn't start until the methodology passes a STOP CHECK.**
+**Turn a business question into an auditable chain: one-question framing, traceable research, bounded falsification, and a report whose data claims link straight to their sources.**
 
-A Skill pair for Claude (and compatible agents): `business-consult` routes; `business-consult-research` investigates. The proof is in [`examples/aging-economy/`](examples/aging-economy/) — a complete, real research run on China's silver economy, from brief to validation report.
-
-**Install**: `npx skills add SiyuanAiLab/business-consult`
-
----
-
-## 为什么需要它
-
-让 AI 做行业调研，最大的问题是它会把猜测写得像事实。这个 Skill 的核心承诺只有一条：**每条结论都标身份**——`[Data]` 有来源直接支持、`[Estimate]` 有明确推理链、`[Assumption]` 是没验证的、`[Opinion]` 是解读。编不出来的，它写「未知」，不写漂亮话。
-
-## 先看产物，再决定装不装
-
-`examples/aging-economy/` 是一次完整的真实调研（中国银发经济：独立创业者该不该进入），15 个文件从研究简报到验证报告全在。报告里的几个发现：
-
-- **[Data] 市场规模比舆论小近一倍**：政策口径「银发经济 7 万亿」，实际老年消费潜力测算约 4.37 万亿——两个数字都有来源，口径分层本身就是结论
-- **[Data] 最赚钱的银发公司正在逃离**：毛利率 85%、年净利 3.57 亿的头部玩家，收入 -28%，转型去做潮玩了
-- **[Data] 监管已经重锤快钱模型**：市监总局专项整治查办 4516 件、罚没 6876.91 万元
-- **[Opinion] 可执行的进入姿势**：报告没有停在「市场很大」，而是收敛到两个 10-50 万资金可验证的具体切口，含六周验证路径和冻结判据
-
-107 条声明逐条登记（`11-claim-register.json`），57 个来源分级入册（`12-sources.md`）。你可以抽查任何一条。
-
-> 我们用这个 Skill 调研自己的商业决策（这就是我们的日常工具）。外部使用见证位留白——你用了觉得好或不好，欢迎开 issue 告诉我们，真实的反馈会出现在这里。
-
-## 它怎么工作
-
-1. **先写答案再搜证**：Day-1 假设 + 幽灵提纲双前置，搜证前冻结判断，之后对照证据标注「证实/修正/推翻」
-2. **方法论闸门**：调研计划不过 schema 校验（STOP CHECK），不许开始搜索
-3. **分阶段结构化**：行业基本面 → 商业模式 → 配额式竞争格局 → 用户痛点 → 机会评估 → 产品体系，每个阶段单独产出、单独校验
-4. **诚实标签贯穿**：从阶段 JSON 到最终报告，标签不落一行
-5. **断点续跑**：`PROGRESS.md` 记录归属与进度，中断可续，多项目不串线
-
-## 安装
+Start with the real, inspectable research package in [`examples/aging-economy/`](examples/aging-economy/) before installing.
 
 ```bash
 npx skills add SiyuanAiLab/business-consult
 ```
 
-## 使用
+## 为什么需要它
 
-把 `business-consult` 当入口，直接向它抛一个商业问题；或者单独调用 `business-consult-research`，给它一个决策和范围。选定一个项目目录，所有运行状态和产物都只写进这个目录。
+商业调研最危险的不是答案不够长，而是三件事混在一起：问题边界没定、猜测写成事实、搜不到反证就当作结论成立。这个 Skill 簇把它们拆成可检查的四段，并用同一个项目目录保存状态和交接物。
 
-可选：挂入你自己的经营模型文档作为对齐过滤器（比如你的定价纪律、你的渠道约束），调研会按你的框架框题；不挂也能跑，它会标注 `[Assumption]` 并继续。
+真实运行顺序是：
 
-## 路线图
+```text
+diagnose → research → falsify → report
+```
 
-当前可用：`business-consult-research`。规划中（路由会如实声明不可用，不伪装）：
+## 五个可安装 Skill
 
-1. `falsify` — 对调研声明做对抗性证伪
-2. `report` — 证伪后生成可辩护的咨询叙事
-3. `diagnose` — 问题诊断与重构（先问「你问的对不对」）
-4. `zh-data` — 中文平台与企业数据采集
+| Skill | 当前能力 | 关键边界 |
+|---|---|---|
+| `business-consult` | 路由四段流程并维护 `PROGRESS.md` | owner 只使用 `diagnose / research / falsify / report` |
+| `diagnose` | 每轮一个问题、会话可恢复、完成后交给 research | 这是外放交互壳；内部诊断方法细节未包含 |
+| `business-consult-research` | 生成分阶段研究、声明册、来源册与验证报告 | 是可辩护的公开资料研究，不是尽职调查 |
+| `falsify` | 搜索前冻结判据与预算，用三态输出独立裁决 | `survived` 只表示预算内未推翻，绝不等于真实 |
+| `report` | 把 research 与裁决覆盖层写成咨询叙事 | 每条数据结论同一行显示来源标题与可点链接；来源附录从阶段 JSON 自动生成 |
 
-## 诚实的边界
+## 它怎么证明自己
 
-- 产出是**可辩护的调研估计**，不是尽职调查
-- 证据质量取决于所选市场与时期的公开来源质量
-- 低置信声明与未解决矛盾不会被抹掉，会作为警告和 Open Questions 留在产物里
+### 1. 问题与流程都能恢复
 
-## 维护状态
+`diagnose/session.json` 保存待回答问题。没有用户回复就不能前进；完成态必须通过 validator（校验器，把文件和状态规则逐项核对的脚本），research 才接受交接。公开版只提供这套交互与状态骨架，不包含私有诊断细则。
 
-AI·LAB 单人维护，我们自己天天在用（internal-first）。issue 会在一周内响应；路线图四件按 falsify → report → diagnose → zh-data 推进，不设假日期。
+### 2. 调研结论带身份
 
-## What you get (English)
+research 使用四类诚实标签：`[Data]`、`[Estimate]`、`[Assumption]`、`[Opinion]`。计划未通过 STOP CHECK 前不开始搜索；阶段文件和最终包分别校验。
 
-- `business-consult` — router + shared progress contract
-- `business-consult-research` — the analysis Skill: fundamentals, business models, landscape, user pains, opportunities, product-system options
-- Claim-level honesty labels (`[Data]` / `[Estimate]` / `[Assumption]` / `[Opinion]`), a pre-search STOP CHECK, per-stage schema validation, quota-based landscape scan, Day-1 hypothesis with pre-registered falsification criteria, and a full source register
-- A complete worked example in `examples/aging-economy/`
+### 3. 反证有上限，也有未决
 
-Snapshot version: `v1.0.0`.
+falsify 在检索前冻结 claim 哈希、推翻判据、查询计划、来源预算和最多两轮上限。裁决只有 `falsified / survived / unresolved` 三态，并保留未覆盖范围与停止原因。
+
+> 本次“未推翻”只代表在已声明范围内未找到足够反证，不代表该结论为真。
+
+### 4. 报告不让读者来回找脚注
+
+report 要求每条数据型结论和承重表格行在同一行给出来源标题与原始可点链接。来源附录不手抄，而是从 research 阶段 JSON 的 `artifacts.sources[]` 合并、校验并自动生成。
+
+## 实证与局限：aging-economy
+
+[`examples/aging-economy/`](examples/aging-economy/) 是一次中国银发经济的时间点研究包，包含 107 条登记声明和 57 个分级来源，可从研究简报追到声明册、来源册与验证报告。
+
+它能证明的是：当前公开 research 副本可以保存完整结构、诚实标签和来源关系。它不能证明以下事情：
+
+- 不是法律、财务或投资尽调；公开来源的覆盖度与可达性会随时间变化。
+- repo 内没有把这份修正版 research 包包装成可复跑的完整四段演示。
+- 一份历史裁决记录绑定了不同的 research 文件哈希；本版本没有改写预注册或伪造搜索来制造“全链已通过”。
+- 因此这里的 00–14 研究文件不能被当作与某份未收录裁决逐字匹配的端到端证明。
+
+## 安装与调用
+
+一次安装会发现五个 Skill。也可以按名称调用：
+
+```text
+$diagnose
+$business-consult-research
+$falsify
+$report
+```
+
+把 `business-consult` 当入口时，先选定一个项目目录。每个子 Skill 只在自己的 owner 状态下继续，并在交接前运行对应 validator。
+
+research 仍支持独立调用。你可以提供自己的经营模型、决策原则或约束文档；不提供时，它记录 `[Assumption] No business context supplied` 后继续，不依赖私有目录。
+
+## Roadmap
+
+v1.1.0 当前包含 parent、research、diagnose shell、falsify 与 report。唯一 pending 路由是：
+
+- `zh-data` — 中文平台与企业数据采集；当前不创建空壳或假实现。
+
+维护采用单人、best-effort 模式，不承诺固定发布日期或响应时限。欢迎通过 issue 提交可复现问题和公开案例；外部使用见证目前留白，不编造评价。
+
+## English summary
+
+Version `v1.1.0` ships five installable Skills in a flat `skills/` layout. The public diagnose component is an interaction shell, research produces claim-level evidence artifacts, falsify applies preregistered bounded three-state adjudication, and report enforces same-line source-title links plus a JSON-generated source appendix. The bundled aging-economy example demonstrates the research layer only, with its evidence and historical-hash limitations stated above.
 
 ## License
 
-CC BY 4.0 — 署名即可商用。Copyright © 2026 Siyuan (AI·LAB).
+CC BY 4.0 — attribution required. Copyright © 2026 Siyuan (AI·LAB).

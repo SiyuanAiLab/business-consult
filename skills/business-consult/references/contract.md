@@ -11,9 +11,18 @@ Use one project root per consulting question. Treat these names as APIs: do not 
 ```text
 {project-root}/
 ├── PROGRESS.md
-├── diagnosis.md                  # optional upstream input
+├── diagnosis.md                  # optional public-shell diagnose output
+├── diagnose/
+│   └── session.json              # optional resumable state; paired with diagnosis
 ├── research/                     # research output
-└── verdict.md                    # reserved for falsify
+├── verdict.md                    # human falsify verdict
+├── falsify/
+│   ├── 00-preregistration.json
+│   ├── 01-attempts.json
+│   ├── 02-verdict.json
+│   └── 03-quarantine.json
+├── report.md                     # report content truth source
+└── report.html                   # optional deterministic derivative
 ```
 
 ## Progress ownership
@@ -29,7 +38,7 @@ current_stage: s2
 updated_at: 2026-07-31T12:00:00+08:00
 ```
 
-Valid `skill` values are `diagnose`, `research`, `falsify`, `report`, and `zh-data`.
+Valid `skill` values are `diagnose`, `research`, `falsify`, and `report`. The pending `zh-data` route is not a progress owner in this release.
 
 Rules:
 
@@ -37,6 +46,19 @@ Rules:
 - Reject silent ownership changes.
 - Permit handoff only when the current owner is `completed`.
 - Keep a checklist for every stage; the first unchecked item is the resume point.
+
+## Diagnose outputs and research handoff
+
+`diagnose` owns exactly `diagnosis.md` and `diagnose/session.json`. If either exists, both are required. The public shell guarantees one question per interaction, a recoverable pending question, response-gated advancement, and a validated completed handoff. It intentionally does not contain the private diagnostic method.
+
+Before handoff, run:
+
+```bash
+python3 ../diagnose/scripts/validate_diagnose.py completed {project-root}
+python3 ../diagnose/scripts/validate_diagnose.py research-probe {project-root}
+```
+
+Both commands must exit zero, and the probe must emit `handoff: accepted` plus `skip_duplicate_intake: true`. Research rejects partial or invalid state. When neither diagnose output exists, research may run standalone intake.
 
 ## Research files
 
@@ -63,22 +85,42 @@ research/
 
 ## Falsify handoff probe
 
-`falsify` may start from research only when all five files exist:
+`falsify` may start from research only when all eleven immutable inputs exist:
 
+- `research/03-s1-foundations.json`
+- `research/04-s2-business-model.json`
+- `research/05-s2.5-landscape.json`
+- `research/06-s3-user-pains.json`
+- `research/07-s4-opportunities.json`
+- `research/08-s5-product-architecture.json`
 - `research/10-research-report.md`
 - `research/11-claim-register.json`
 - `research/12-sources.md`
 - `research/13-open-questions.md`
 - `research/14-validation-report.md`
 
-If any file is missing, run `falsify` standalone or return to `research`; never infer the missing artifact.
+Run `python3 ../falsify/scripts/validate_falsify.py probe {project-root}`. If any file is missing or invalid, return to `research`; never infer a missing artifact or mutate an upstream file.
+
+## Falsify outputs
+
+`falsify` owns exactly `verdict.md` plus `falsify/00-preregistration.json` through `03-quarantine.json`. Run `python3 ../falsify/scripts/validate_falsify.py validate {project-root}` before handoff. Quarantine is audit-only and never moves, deletes, or rewrites research.
 
 ## Report handoff probe
 
-`report` should prefer:
+`report` production input is fixed and requires:
 
+- `research/03-s1-foundations.json`
+- `research/04-s2-business-model.json`
+- `research/05-s2.5-landscape.json`
+- `research/06-s3-user-pains.json`
+- `research/07-s4-opportunities.json`
+- `research/08-s5-product-architecture.json`
+- `research/10-research-report.md`
+- `research/11-claim-register.json`
+- `research/12-sources.md`
+- `research/13-open-questions.md`
+- `research/14-validation-report.md`
 - `verdict.md`
-- the complete falsify handoff set above
+- `falsify/02-verdict.json`
 
-When `verdict.md` is absent, `report` remains unavailable in this build rather than treating unverified research as a final consulting conclusion.
-
+Run `python3 ../report/scripts/validate_report.py probe {project-root}`. If a verdict or research input is absent or invalid, stop. `report.md` remains the content truth source; `report.html` is only its deterministic derivative.

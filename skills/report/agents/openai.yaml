@@ -1,0 +1,4 @@
+interface:
+  display_name: "商业咨询报告"
+  short_description: "把调研与证伪裁决整理成来源直达、可溯源、可辩护的中文咨询报告"
+  default_prompt: "Use $report to turn validated research and falsify verdicts into a defensible Markdown report."

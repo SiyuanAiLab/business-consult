@@ -5,9 +5,9 @@ metadata:
   status: active（2026-07-31 三轮定性验收闭环转正）
   validation_type: qualitative
   validation_loop_max: 3
-author: Siyuan (AI·LAB)
+  author: Siyuan (AI·LAB)
+  release: flagship
 license: CC-BY-4.0
-release: flagship
 ---
 
 # Research
@@ -19,9 +19,10 @@ Produce defensible estimates, not due diligence. Work standalone or consume `dia
 1. Read the cluster file contract if available; otherwise use the fixed paths in `references/workflow.md`.
 2. Inspect `{project-root}/PROGRESS.md`.
 3. Resume only when `skill: research`; stop on any other active owner.
-4. Probe `{project-root}/diagnosis.md`.
-5. Reuse its decision, scope, and research specification when present. Otherwise run the intake.
-6. Read only the reference required by the current stage.
+4. Probe `{project-root}/diagnosis.md` and `{project-root}/diagnose/session.json` as one pair. If exactly one exists, stop.
+5. When both exist, run `python3 ../diagnose/scripts/validate_diagnose.py research-probe "/absolute/project-root"`. Stop on an in-progress or invalid state.
+6. Consume only a successful payload containing `handoff: accepted` and `skip_duplicate_intake: true`; reuse its research specification and skip duplicate intake. If neither diagnose output exists, run the standalone intake.
+7. Read only the reference required by the current stage.
 
 ## Phase 1: Clarify
 

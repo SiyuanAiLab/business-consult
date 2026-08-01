@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Falsify verdict overlay",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project", "generated_at", "preregistration_sha256", "attempts_sha256", "verdicts"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "minLength": 1},
+    "preregistration_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "attempts_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "verdicts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "claim_hash", "status", "reason", "stop_reason", "planned_query_count", "actual_query_count", "successful_open_count", "credible_counterevidence_count", "uncovered_scope"],
+        "properties": {
+          "claim_id": {"type": "string", "minLength": 1},
+          "claim_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "status": {"enum": ["falsified", "survived", "unresolved"]},
+          "reason": {"type": "string", "minLength": 1},
+          "stop_reason": {"type": "string", "minLength": 1},
+          "planned_query_count": {"type": "integer", "minimum": 1},
+          "actual_query_count": {"type": "integer", "minimum": 1},
+          "successful_open_count": {"type": "integer", "minimum": 0},
+          "credible_counterevidence_count": {"type": "integer", "minimum": 0},
+          "uncovered_scope": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+        }
+      }
+    }
+  }
+}

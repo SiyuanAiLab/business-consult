@@ -15,7 +15,6 @@ STAGES = {
     "research": ["intake", "hypothesis", "plan", "s1", "s2", "s2.5", "s3", "s4", "s5", "s6", "validation"],
     "falsify": ["probe", "preregister", "challenge", "verdict"],
     "report": ["probe", "outline", "draft", "quality-gate"],
-    "zh-data": ["request", "collect", "validate", "handoff"],
 }
 
 
