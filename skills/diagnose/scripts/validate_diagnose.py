@@ -168,6 +168,37 @@ def validate_handoff(value: Any, findings: Findings) -> None:
     sorted_strings(value.get("evidence_needs"), "handoff evidence_needs", findings)
 
 
+def validate_reader_handoff(
+    handoff: Any, sections: dict[str, str], findings: Findings
+) -> None:
+    if not isinstance(handoff, dict):
+        return
+    scalar_sections = {
+        "decision": "Decision",
+        "scope": "Scope",
+        "research_question": "Research question",
+    }
+    for key, heading in scalar_sections.items():
+        value = handoff.get(key)
+        if nonempty(value) and value not in sections.get(heading, ""):
+            findings.critical.append(
+                f"diagnosis {heading} does not contain handoff {key}"
+            )
+    array_sections = {
+        "exclusions": "Exclusions",
+        "evidence_needs": "Evidence needs",
+    }
+    for key, heading in array_sections.items():
+        values = handoff.get(key)
+        if not isinstance(values, list):
+            continue
+        for value in values:
+            if nonempty(value) and value not in sections.get(heading, ""):
+                findings.critical.append(
+                    f"diagnosis {heading} does not contain handoff {key} item: {value}"
+                )
+
+
 def parse_diagnosis(path: Path) -> tuple[Findings, dict[str, str], dict[str, str], str]:
     findings = Findings()
     try:
@@ -254,6 +285,7 @@ def validate_project(root: Path) -> tuple[Findings, dict[str, Any]]:
         handoff = extract_handoff(text, findings)
         if handoff != session.get("handoff"):
             findings.critical.append("session and diagnosis handoff disagree")
+        validate_reader_handoff(session.get("handoff"), sections, findings)
     findings.checks.append("fixed output pair checked")
     return findings, session
 
