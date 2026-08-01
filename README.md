@@ -1,5 +1,7 @@
 # Business Consult Skills
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/SiyuanAiLab/business-consult)
+
 **AI-written business research you can actually audit: every claim carries an honesty label, every number carries a source, and the search doesn't start until the methodology passes a STOP CHECK.**
 
 A Skill pair for Claude (and compatible agents): `business-consult` routes; `business-consult-research` investigates. The proof is in [`examples/aging-economy/`](examples/aging-economy/) — a complete, real research run on China's silver economy, from brief to validation report.
@@ -22,6 +24,8 @@ A Skill pair for Claude (and compatible agents): `business-consult` routes; `bus
 - **[Opinion] 可执行的进入姿势**：报告没有停在「市场很大」，而是收敛到两个 10-50 万资金可验证的具体切口，含六周验证路径和冻结判据
 
 107 条声明逐条登记（`11-claim-register.json`），57 个来源分级入册（`12-sources.md`）。你可以抽查任何一条。
+
+> 我们用这个 Skill 调研自己的商业决策（这就是我们的日常工具）。外部使用见证位留白——你用了觉得好或不好，欢迎开 issue 告诉我们，真实的反馈会出现在这里。
 
 ## 它怎么工作
 
@@ -57,6 +61,10 @@ npx skills add SiyuanAiLab/business-consult
 - 产出是**可辩护的调研估计**，不是尽职调查
 - 证据质量取决于所选市场与时期的公开来源质量
 - 低置信声明与未解决矛盾不会被抹掉，会作为警告和 Open Questions 留在产物里
+
+## 维护状态
+
+AI·LAB 单人维护，我们自己天天在用（internal-first）。issue 会在一周内响应；路线图四件按 falsify → report → diagnose → zh-data 推进，不设假日期。
 
 ## What you get (English)
 
