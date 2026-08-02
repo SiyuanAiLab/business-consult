@@ -2,7 +2,9 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/SiyuanAiLab/business-consult)
 
-**Turn a business question into an auditable chain: one-question framing, traceable research, bounded falsification, and a report whose data claims link straight to their sources.**
+**让 AI 做商业调研，每个结论都敢标明身份：这是数据、这是推算、这是没验证的、这是它的判断——编不出来的，它写「未知」。**
+
+Turn a business question into an auditable chain: one-question framing, traceable research, bounded falsification, and a report whose data claims link straight to their sources.
 
 Start with the real, inspectable research package in [`examples/aging-economy/`](examples/aging-economy/) before installing.
 
@@ -12,9 +14,17 @@ npx skills add SiyuanAiLab/business-consult
 
 ## 为什么需要它
 
-商业调研最危险的不是答案不够长，而是三件事混在一起：问题边界没定、猜测写成事实、搜不到反证就当作结论成立。这个 Skill 簇把它们拆成可检查的四段，并用同一个项目目录保存状态和交接物。
+让 AI 帮你做商业调研，真正危险的不是答案不够好，而是你根本不知道答案错在哪。三个病，每个都致命：
 
-真实运行顺序是：
+**病一：问题没定边界，报告已经写完了。** 你问「要不要做宠物经济」，AI 立刻给你一份行业分析。但你是想开店、做供应链，还是做内容号？这三件事的市场、对手、本钱完全不同。问题错了，报告越漂亮，错得越远——而且没人提醒你。`diagnose` 治这个病：先诊断你的问题，一轮只问一个，五道门过完才许开工。
+
+**病二：猜测和事实长得一模一样。** AI 写「市场规模 5000 亿」，你抄进 BP 给投资人看。这个数字是有来源，还是它编的？你不知道，它也不说——因为没有任何机制逼它说。`research` 治这个病：每个结论强制标身份，有来源的标 `[Data]`，推理的标 `[Estimate]`，没验证的标 `[Assumption]`。编不出来的，它只能写「未知」。
+
+**病三：搜不到反证，就当你是对的。** 你让 AI 验证你的创业想法，它找了一堆支持证据交差。但它找过反证吗？「没找到反对证据」和「这个想法成立」是两回事——前者只是没找够。`falsify` 治这个病：动手前先冻结「什么证据能推翻我」，最多两轮、预算花完就停，最后只给三种裁决——推翻、存活、未决。**「未推翻」绝不等于「是真的」**，这句话它写在每一份裁决上。
+
+最后 `report` 把活下来的结论写成报告：每条数据型结论同一行带来源标题和可点链接，你不用翻附录找脚注。
+
+真实运行顺序：
 
 ```text
 diagnose → research → falsify → report
@@ -32,23 +42,11 @@ diagnose → research → falsify → report
 
 ## 它怎么证明自己
 
-### 1. 问题与流程都能恢复
+不让你信我们，让你自己验：
 
-`diagnose/session.json` 保存待回答问题。没有用户回复就不能前进；完成态必须通过 validator（校验器，把文件和状态规则逐项核对的脚本），research 才接受交接。公开版只提供这套交互与状态骨架，不包含私有诊断细则。
-
-### 2. 调研结论带身份
-
-research 使用四类诚实标签：`[Data]`、`[Estimate]`、`[Assumption]`、`[Opinion]`。计划未通过 STOP CHECK 前不开始搜索；阶段文件和最终包分别校验。
-
-### 3. 反证有上限，也有未决
-
-falsify 在检索前冻结 claim 哈希、推翻判据、查询计划、来源预算和最多两轮上限。裁决只有 `falsified / survived / unresolved` 三态，并保留未覆盖范围与停止原因。
-
-> 本次“未推翻”只代表在已声明范围内未找到足够反证，不代表该结论为真。
-
-### 4. 报告不让读者来回找脚注
-
-report 要求每条数据型结论和承重表格行在同一行给出来源标题与原始可点链接。来源附录不手抄，而是从 research 阶段 JSON 的 `artifacts.sources[]` 合并、校验并自动生成。
+1. **读一份真实调研**：[`examples/aging-economy/`](examples/aging-economy/) 是一次完整的中国银发经济调研（时间快照），107 条声明逐条登记、57 个来源分级入册——从研究简报一路翻到验证报告
+2. **抽查任何一条**：`11-claim-register.json` 里每条声明都有来源 id、置信度和推理说明；`12-sources.md` 里每个来源都有链接
+3. **看我们的自我设限**：下面「实证与局限」一节，把这份示例做不到的三件事如实写出来
 
 ## 实证与局限：aging-economy
 
