@@ -1,0 +1,426 @@
+{
+  "schema_version": "1.0",
+  "project": "aging-economy-demo",
+  "generated_at": "2026-08-02T12:30:00+08:00",
+  "preregistration_sha256": "24a93a9b5497c9fa273241950cd2c9287e1f8a671f243849c742022de382d095",
+  "claims": [
+    {
+      "claim_id": "S1-C008",
+      "claim_hash": "22ad663a03bb703ff944818ad217debcc138b0721cb56f057202054efb1cd8ae",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "rounds_used": 2,
+      "attempts": [
+        {
+          "attempt_id": "S1-C008-A1",
+          "round": 1,
+          "query": "发改委 银发经济 7万亿 30万亿 口径 质疑",
+          "attempted_at": "2026-08-02T11:32:00+08:00",
+          "status": "completed",
+          "opened_sources": [],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S1-C008-A2",
+          "round": 1,
+          "query": "银发经济 7万亿 占GDP 6% 出处",
+          "attempted_at": "2026-08-02T11:33:00+08:00",
+          "status": "completed",
+          "opened_sources": [
+            {
+              "url": "https://www.ndrc.gov.cn/xwdt/spfg/zfzjt/202401/t20240122_1363612.html",
+              "title": "【专家谈｜加快完善银发经济支持政策体系 重视科技第一动力作用】-国家发展和改革委员会",
+              "fetch_status": "opened",
+              "source_kind": "primary",
+              "relation": "supports",
+              "final_evidence": true,
+              "notes": "国家发改委官网专家谈原句：银发经济规模约7万亿、占GDP约6%、2035年30万亿左右、占比约10%，与声明数字一致。"
+            }
+          ],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S1-C008-A3",
+          "round": 2,
+          "query": "银发经济 规模 万亿 2025 官方 测算",
+          "attempted_at": "2026-08-02T11:48:00+08:00",
+          "status": "completed",
+          "opened_sources": [],
+          "failure_reason": ""
+        }
+      ],
+      "successful_open_count": 1,
+      "credible_counterevidence_count": 0,
+      "uncovered_scope": [
+        "2025年后发改委更新口径（8万亿说法）未获发改委官网原文核验",
+        "《银发经济蓝皮书》原文未打开"
+      ],
+      "stop_reason": "全部3条计划查询执行完毕，可信反证为零。"
+    },
+    {
+      "claim_id": "S1-C009",
+      "claim_hash": "663be0869c23b65694a7be93b5536dd734cff153c3c1ef0b9794ac3b84969aec",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "rounds_used": 2,
+      "attempts": [
+        {
+          "attempt_id": "S1-C009-A1",
+          "round": 1,
+          "query": "中国老龄产业发展报告 4.37万亿 消费潜力",
+          "attempted_at": "2026-08-02T11:35:00+08:00",
+          "status": "completed",
+          "opened_sources": [],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S1-C009-A2",
+          "round": 1,
+          "query": "老龄科学研究中心 老年消费 4.37万亿 占GDP 5.25%",
+          "attempted_at": "2026-08-02T11:36:00+08:00",
+          "status": "completed",
+          "opened_sources": [],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S1-C009-A3",
+          "round": 2,
+          "query": "中国老龄产业发展报告 2050 100万亿 老年消费",
+          "attempted_at": "2026-08-02T11:52:00+08:00",
+          "status": "completed",
+          "opened_sources": [
+            {
+              "url": "http://world.people.com.cn/n/2014/0924/c190970-25722173.html",
+              "title": "2013老年人口破2亿 老龄产业市场2050年将达106万亿--国际--人民网",
+              "fetch_status": "opened",
+              "source_kind": "authoritative-secondary",
+              "relation": "supports",
+              "final_evidence": true,
+              "notes": "2014版《中国老龄产业发展报告》原文转述：2014-2050年老年人口消费潜力从4万亿增长到106万亿左右，支持声明的「2050年百万亿级」表述。"
+            },
+            {
+              "url": "https://www.chinanews.com.cn/m/cj/2022/03-01/9689302.shtml",
+              "title": "中国老年人口消费潜力将不断上升 至2050年或达40万亿至69万亿元-中国新闻网",
+              "fetch_status": "opened",
+              "source_kind": "authoritative-secondary",
+              "relation": "contradicts",
+              "final_evidence": true,
+              "notes": "同一机构（中国老龄科学研究中心）《中国老龄产业发展及指标体系研究》预测2050年消费总量40-69万亿元，与声明的「2050年有望增至百万亿级」冲突。"
+            }
+          ],
+          "failure_reason": ""
+        }
+      ],
+      "successful_open_count": 2,
+      "credible_counterevidence_count": 1,
+      "uncovered_scope": [
+        "《中国老龄产业发展报告(2021-2022)》原文未打开，其2050年40.69万亿测算为二手转述",
+        "声明中2050年预测的报告版本归属（2014版还是2021-2022版）未完全核验"
+      ],
+      "stop_reason": "证据冲突：2020年部分被多源确认，2050年部分存在同源机构不同版本报告互相冲突，触发预注册未决条件。"
+    },
+    {
+      "claim_id": "S1-C016",
+      "claim_hash": "e903679b5512dd7eeff90725156779674ea1cbe9067978587960a7b65941f666",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "rounds_used": 2,
+      "attempts": [
+        {
+          "attempt_id": "S1-C016-A1",
+          "round": 1,
+          "query": "CNNIC 60岁以上 银发网民 1.61亿 52%",
+          "attempted_at": "2026-08-02T11:38:00+08:00",
+          "status": "completed",
+          "opened_sources": [
+            {
+              "url": "http://finance.people.com.cn/n1/2025/0721/c1004-40526406.html",
+              "title": "超半数老年人上网 我国银发网民规模达1.61亿人",
+              "fetch_status": "failed",
+              "source_kind": "authoritative-secondary",
+              "relation": "no-relevance",
+              "final_evidence": false,
+              "notes": "人民网页面因证书域名不匹配未能打开，不作证据。"
+            },
+            {
+              "url": "https://www.stdaily.com/web/gdxw/2025-07/21/content_373140.html",
+              "title": "中国网民规模达11.23亿人2024年AI产业规模突破7000亿元",
+              "fetch_status": "opened",
+              "source_kind": "authoritative-secondary",
+              "relation": "supports",
+              "final_evidence": true,
+              "notes": "科技日报原句：60岁及以上银发网民规模达1.61亿人、老年群体互联网普及率达52.0%，出自CNNIC第56次报告（截至2025年6月）。"
+            }
+          ],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S1-C016-A2",
+          "round": 1,
+          "query": "第55次 互联网络发展状况统计报告 老年 网民",
+          "attempted_at": "2026-08-02T11:39:00+08:00",
+          "status": "completed",
+          "opened_sources": [],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S1-C016-A3",
+          "round": 2,
+          "query": "银发网民 规模 2025 普及率 过半",
+          "attempted_at": "2026-08-02T11:56:00+08:00",
+          "status": "completed",
+          "opened_sources": [],
+          "failure_reason": ""
+        }
+      ],
+      "successful_open_count": 1,
+      "credible_counterevidence_count": 0,
+      "uncovered_scope": [
+        "CNNIC第56次报告原文PDF未打开（采用科技日报转述）",
+        "人民网同题页面因证书错误未打开"
+      ],
+      "stop_reason": "全部3条计划查询执行完毕，可信反证为零。"
+    },
+    {
+      "claim_id": "S2-C005",
+      "claim_hash": "b441b96175af9e267ce278dbe86fb5286ee2d62790ceaa1504d3394525be55c0",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "rounds_used": 2,
+      "attempts": [
+        {
+          "attempt_id": "S2-C005-A1",
+          "round": 1,
+          "query": "量子之歌 FY2025 财报 营收 27.26亿 下降",
+          "attempted_at": "2026-08-02T11:41:00+08:00",
+          "status": "completed",
+          "opened_sources": [],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S2-C005-A2",
+          "round": 1,
+          "query": "QuantaSing fiscal 2025 annual results revenue",
+          "attempted_at": "2026-08-02T11:42:00+08:00",
+          "status": "completed",
+          "opened_sources": [
+            {
+              "url": "https://www.globenewswire.com/news-release/2025/09/17/3151428/0/en/QuantaSing-Announces-Unaudited-Financial-Results-for-the-Fourth-Quarter-of-Fiscal-Year-2025-and-Full-Fiscal-Year-2025.html",
+              "title": "QuantaSing Announces Unaudited Financial Results for the Fourth Quarter of Fiscal Year 2025 and Full Fiscal Year 2025",
+              "fetch_status": "opened",
+              "source_kind": "primary",
+              "relation": "supports",
+              "final_evidence": true,
+              "notes": "公司财报新闻稿原文：FY2025营收RMB2,725.6百万（上年3,795.3百万，约-28.2%）、净利RMB356.6百万；FY2026潮玩收入指引RMB750-800百万；2025年3月收购Letsvan。"
+            }
+          ],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S2-C005-A3",
+          "round": 2,
+          "query": "量子之歌 潮玩 Letsvan 2026财年 指引 8亿",
+          "attempted_at": "2026-08-02T11:58:00+08:00",
+          "status": "completed",
+          "opened_sources": [],
+          "failure_reason": ""
+        }
+      ],
+      "successful_open_count": 1,
+      "credible_counterevidence_count": 0,
+      "uncovered_scope": [
+        "SEC 6-K申报原文未打开（采用公司在GlobeNewswire发布的财报新闻稿）",
+        "个人在线学习收入22.35亿元的构成明细未在打开页面逐项核对"
+      ],
+      "stop_reason": "全部3条计划查询执行完毕，可信反证为零。"
+    },
+    {
+      "claim_id": "S25-C004",
+      "claim_hash": "cac217fe68ea4c0fe3c2962ff993c9b3545e89eb64db8f28769221d517ad1c3a",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "rounds_used": 2,
+      "attempts": [
+        {
+          "attempt_id": "S25-C004-A1",
+          "round": 1,
+          "query": "东犁退休俱乐部 B轮 融资 亿元 恒旭资本",
+          "attempted_at": "2026-08-02T12:04:00+08:00",
+          "status": "completed",
+          "opened_sources": [
+            {
+              "url": "http://www.36kr.com/p/3719736708200068",
+              "title": "36氪首发｜「东犁退休俱乐部」完成亿元级B轮融资，为300万活力银发族打造“线上+线下”社交生活方式",
+              "fetch_status": "opened",
+              "source_kind": "authoritative-secondary",
+              "relation": "supports",
+              "final_evidence": true,
+              "notes": "36氪原文（2026-04-20）：亿元级B轮、恒旭资本领投德同资本跟投、2025年旅游业务营收超8亿元、复购率超过60%、累计服务超300万用户。"
+            },
+            {
+              "url": "https://www.hengxucapital.com/index.php?c=show&id=697",
+              "title": "东犁退休俱乐部完成亿元级B轮融资，数据领跑银发经济新赛道_恒旭伙伴_公司新闻_恒旭资本",
+              "fetch_status": "opened",
+              "source_kind": "primary",
+              "relation": "supports",
+              "final_evidence": true,
+              "notes": "领投方恒旭资本官网原文：亿元级B轮领投、2025年旅游业务营收突破8亿元、用户复购率超60%。"
+            }
+          ],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S25-C004-A2",
+          "round": 1,
+          "query": "东犁 退休俱乐部 营收 10亿 复购率 60%",
+          "attempted_at": "2026-08-02T12:05:00+08:00",
+          "status": "completed",
+          "opened_sources": [],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S25-C004-A3",
+          "round": 2,
+          "query": "东犁旅游 8亿 2025 营收 复购",
+          "attempted_at": "2026-08-02T12:08:00+08:00",
+          "status": "completed",
+          "opened_sources": [],
+          "failure_reason": ""
+        }
+      ],
+      "successful_open_count": 2,
+      "credible_counterevidence_count": 0,
+      "uncovered_scope": [
+        "「总营收约10亿元」未获公司直接披露确认，为媒体概括口径（旅游8亿+电商预计3-4亿）",
+        "复购率超60%的计算口径（分子分母定义）未披露"
+      ],
+      "stop_reason": "全部3条计划查询执行完毕，可信反证为零。"
+    },
+    {
+      "claim_id": "S25-C017",
+      "claim_hash": "9b8b48700938fb163b637779a21e33ca167da82db2cf4c67acb7f280d97eb29a",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "rounds_used": 2,
+      "attempts": [
+        {
+          "attempt_id": "S25-C017-A1",
+          "round": 1,
+          "query": "江苏省消保委 老年旅游 调查 48.8% 免责协议",
+          "attempted_at": "2026-08-02T12:10:00+08:00",
+          "status": "completed",
+          "opened_sources": [
+            {
+              "url": "https://www.yangtse.com/news/ch/202510/t20251027_282307.html",
+              "title": "年龄限制、健康证明、免责协议……银发游设“层层路障”",
+              "fetch_status": "opened",
+              "source_kind": "authoritative-secondary",
+              "relation": "supports",
+              "final_evidence": true,
+              "notes": "扬子晚报（紫牛新闻）原文：48.79%签额外免责协议、37.77%需强制家属陪同、22.86%需提供县级以上医院健康证明，与声明的48.8%/37.8%/22.9%为四舍五入一致。"
+            }
+          ],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S25-C017-A2",
+          "round": 1,
+          "query": "江苏 老年游客 强制家属陪同 37.8% 健康证明 22.9%",
+          "attempted_at": "2026-08-02T12:11:00+08:00",
+          "status": "completed",
+          "opened_sources": [],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S25-C017-A3",
+          "round": 2,
+          "query": "江苏省消保委 银发旅游 消费调查 70岁 拒收",
+          "attempted_at": "2026-08-02T12:14:00+08:00",
+          "status": "completed",
+          "opened_sources": [
+            {
+              "url": "http://city.ce.cn/yw/202511/t20251103_2553779.shtml",
+              "title": "江苏省消保委发布“银发一族”参团旅游消费调查报告 呼吁不该对报团者年龄滥加限制",
+              "fetch_status": "failed",
+              "source_kind": "authoritative-secondary",
+              "relation": "no-relevance",
+              "final_evidence": false,
+              "notes": "中国经济网页面返回504未打开，不作证据。"
+            }
+          ],
+          "failure_reason": ""
+        }
+      ],
+      "successful_open_count": 1,
+      "credible_counterevidence_count": 0,
+      "uncovered_scope": [
+        "江苏省消保委官网原文未打开（采用扬子晚报转述）",
+        "问卷样本量（13830份）未在已打开页面中出现"
+      ],
+      "stop_reason": "全部3条计划查询执行完毕，可信反证为零。"
+    },
+    {
+      "claim_id": "S3-C006",
+      "claim_hash": "45230e16129340e9e8abd153c4d3f7bccc9ef09e7c0b5e9cbb6f2a064c313f51",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "rounds_used": 2,
+      "attempts": [
+        {
+          "attempt_id": "S3-C006-A1",
+          "round": 1,
+          "query": "市场监管总局 老年人药品保健品 虚假宣传 专项整治 4516件",
+          "attempted_at": "2026-08-02T11:44:00+08:00",
+          "status": "completed",
+          "opened_sources": [
+            {
+              "url": "https://news.cctv.com/2025/10/15/ARTIaXRMe3qv0YtvjbTAJFg1251015.shtml",
+              "title": "市场监管总局：查办老年人药品、保健品虚假宣传等违法案件4516件",
+              "fetch_status": "opened",
+              "source_kind": "authoritative-secondary",
+              "relation": "supports",
+              "final_evidence": true,
+              "notes": "央视网原句：征集问题线索7415个、查办违法案件4516件、罚没金额6876.91万元、责令3611家主体整改，与声明一致。"
+            }
+          ],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S3-C006-A2",
+          "round": 1,
+          "query": "市场监管总局 专项整治 罚没 6876.91万 整改 3611家",
+          "attempted_at": "2026-08-02T11:45:00+08:00",
+          "status": "completed",
+          "opened_sources": [],
+          "failure_reason": ""
+        },
+        {
+          "attempt_id": "S3-C006-A3",
+          "round": 2,
+          "query": "上海 私域直播 专项整治 立案 83起 罚款 35万",
+          "attempted_at": "2026-08-02T12:01:00+08:00",
+          "status": "completed",
+          "opened_sources": [
+            {
+              "url": "https://scjgj.sh.gov.cn/1073/20251014/2c984a7299dbc4280199e13c75951714.html",
+              "title": "上海市市场监督管理局公布一批老年保健品虚假宣传典型案例",
+              "fetch_status": "opened",
+              "source_kind": "primary",
+              "relation": "supports",
+              "final_evidence": true,
+              "notes": "上海市监局官网原句：截至8月底共立案83起虚假宣传案件；案例四罚款人民币35万元，与声明一致。"
+            }
+          ],
+          "failure_reason": ""
+        }
+      ],
+      "successful_open_count": 2,
+      "credible_counterevidence_count": 0,
+      "uncovered_scope": [
+        "微信2025年3月「养生直播」治理公告原文未打开",
+        "上海通报为截至8月底口径，与全年口径的差异未核验"
+      ],
+      "stop_reason": "全部3条计划查询执行完毕，可信反证为零。"
+    }
+  ]
+}

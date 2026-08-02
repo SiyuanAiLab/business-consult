@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0",
+  "project": "aging-economy-demo",
+  "generated_at": "2026-08-02T11:00:00+08:00",
+  "input_manifest": [
+    {
+      "path": "research/03-s1-foundations.json",
+      "sha256": "8e2d67bfd482de1ce30a6473c0a6b500a0693af5259afe601ca9c1cd6f294e63"
+    },
+    {
+      "path": "research/04-s2-business-model.json",
+      "sha256": "4cf517abd60b99e4e01f9cc6cee05a53b78051565666f8910c8e1420fdec0a70"
+    },
+    {
+      "path": "research/05-s2.5-landscape.json",
+      "sha256": "5d05e32b09eee79f020dc72cacce9ee36b725ab1f25a8d28dd089986920705b3"
+    },
+    {
+      "path": "research/06-s3-user-pains.json",
+      "sha256": "6996401af28f36a3f945583fedd1cab02181ecc7b1e6eca0f5f5c021019a76ff"
+    },
+    {
+      "path": "research/07-s4-opportunities.json",
+      "sha256": "81d03813f191e7b8da51c22b7fb0694a513622a7f34af8287398f28668e3345d"
+    },
+    {
+      "path": "research/08-s5-product-architecture.json",
+      "sha256": "efb482ffe74eea867bcfd6cfe405591ee01d3bace0f38255ea98139d674266c5"
+    },
+    {
+      "path": "research/10-research-report.md",
+      "sha256": "9104e4c88556a8a7152497f696d9f6e26ff350a4a4f1be7fe39883f812a08a25"
+    },
+    {
+      "path": "research/11-claim-register.json",
+      "sha256": "0af78dd35d0c7372e256e395c83432894a26db0dd0763469c422fde219f6471f"
+    },
+    {
+      "path": "research/12-sources.md",
+      "sha256": "0f1b65cb7545b886c4bdc4d5c7efed514a41af9390982ad3f372e019efcc627c"
+    },
+    {
+      "path": "research/13-open-questions.md",
+      "sha256": "1b3f3fea5b68999a8f5f56e2a0b84870187e187b33d3d5ec38e252d1866cc547"
+    },
+    {
+      "path": "research/14-validation-report.md",
+      "sha256": "8faba8325feba751081e78e36af0ed03638d7c60c7315c47e298c90eb1dbc7b2"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "S1-C008",
+      "claim_hash": "22ad663a03bb703ff944818ad217debcc138b0721cb56f057202054efb1cd8ae",
+      "exact_claim": "国家发改委专家口径：目前中国银发经济规模约7万亿元，占GDP比重约6%；预计2035年达30万亿元左右，占GDP约10%。注意该口径含'备老经济'，是政策叙事口径而非纯老年消费口径。",
+      "impact_areas": [
+        "executive-answer",
+        "market-scale"
+      ],
+      "falsification_criterion": "找到国家发改委或同等权威来源明确给出与「约7万亿元、占GDP约6%、2035年约30万亿元、占GDP约10%」相冲突的官方口径数字，或证明该组数字并非发改委专家口径。",
+      "adversarial_query_plan": [
+        {
+          "round": 1,
+          "queries": [
+            "发改委 银发经济 7万亿 30万亿 口径 质疑",
+            "银发经济 7万亿 占GDP 6% 出处"
+          ]
+        },
+        {
+          "round": 2,
+          "queries": [
+            "银发经济 规模 万亿 2025 官方 测算"
+          ]
+        }
+      ],
+      "source_budget": {
+        "max_opened_sources": 4,
+        "max_rounds": 2
+      },
+      "unresolved_conditions": [
+        "发改委原文页面不可访问且权威转述相互冲突",
+        "不同权威来源给出不同口径且无法判定哪个对应声明中的口径"
+      ],
+      "planned_query_count": 3
+    },
+    {
+      "claim_id": "S1-C009",
+      "claim_hash": "663be0869c23b65694a7be93b5536dd734cff153c3c1ef0b9794ac3b84969aec",
+      "exact_claim": "中国老龄科学研究中心《中国老龄产业发展报告》测算：2020年中国老年人口消费潜力约4.37万亿元，占GDP 5.25%；2050年有望增至百万亿级。",
+      "impact_areas": [
+        "executive-answer",
+        "market-scale"
+      ],
+      "falsification_criterion": "找到中国老龄科学研究中心《中国老龄产业发展报告》原文或权威转述给出与「2020年消费潜力约4.37万亿元、占GDP 5.25%」不同的数字，或证明该测算不存在。",
+      "adversarial_query_plan": [
+        {
+          "round": 1,
+          "queries": [
+            "中国老龄产业发展报告 4.37万亿 消费潜力",
+            "老龄科学研究中心 老年消费 4.37万亿 占GDP 5.25%"
+          ]
+        },
+        {
+          "round": 2,
+          "queries": [
+            "中国老龄产业发展报告 2050 100万亿 老年消费"
+          ]
+        }
+      ],
+      "source_budget": {
+        "max_opened_sources": 4,
+        "max_rounds": 2
+      },
+      "unresolved_conditions": [
+        "报告原文不可公开访问且转述数字不一致",
+        "无法确认4.37万亿对应2020年消费潜力口径"
+      ],
+      "planned_query_count": 3
+    },
+    {
+      "claim_id": "S1-C016",
+      "claim_hash": "e903679b5512dd7eeff90725156779674ea1cbe9067978587960a7b65941f666",
+      "exact_claim": "截至2025年6月，中国60岁及以上银发网民规模达1.61亿人，老年群体互联网普及率首次过半（52.0%）。",
+      "impact_areas": [
+        "go-to-market",
+        "opportunity-ranking"
+      ],
+      "falsification_criterion": "找到CNNIC报告或权威来源给出2025年60+银发网民规模或互联网普及率与「1.61亿人、52.0%」相冲突的数字。",
+      "adversarial_query_plan": [
+        {
+          "round": 1,
+          "queries": [
+            "CNNIC 60岁以上 银发网民 1.61亿 52%",
+            "第55次 互联网络发展状况统计报告 老年 网民"
+          ]
+        },
+        {
+          "round": 2,
+          "queries": [
+            "银发网民 规模 2025 普及率 过半"
+          ]
+        }
+      ],
+      "source_budget": {
+        "max_opened_sources": 4,
+        "max_rounds": 2
+      },
+      "unresolved_conditions": [
+        "CNNIC原文不可访问且二手报道数字冲突",
+        "无法定位声明所指的统计时点（2025年6月）口径"
+      ],
+      "planned_query_count": 3
+    },
+    {
+      "claim_id": "S2-C005",
+      "claim_hash": "b441b96175af9e267ce278dbe86fb5286ee2d62790ceaa1504d3394525be55c0",
+      "exact_claim": "头部玩家·老年在线教育：量子之歌（千尺学堂/启牛学堂/讲真）FY2025（截至2025年6月）营收27.26亿元，同比降28.2%；净利润3.57亿元；个人在线学习收入从33.64亿降至22.35亿元，公司收购潮玩品牌Letsvan并给出2026财年潮玩收入7.5-8亿元指引，主业重心正在离开银发教育。",
+      "impact_areas": [
+        "executive-answer",
+        "opportunity-ranking"
+      ],
+      "falsification_criterion": "找到量子之歌FY2025财报原文或权威财经报道给出与「营收27.26亿元、同比降28.2%、净利润3.57亿元」不同的数字，或证明其未收购Letsvan、未给出2026财年潮玩收入7.5-8亿元指引。",
+      "adversarial_query_plan": [
+        {
+          "round": 1,
+          "queries": [
+            "量子之歌 FY2025 财报 营收 27.26亿 下降",
+            "QuantaSing fiscal 2025 annual results revenue"
+          ]
+        },
+        {
+          "round": 2,
+          "queries": [
+            "量子之歌 潮玩 Letsvan 2026财年 指引 8亿"
+          ]
+        }
+      ],
+      "source_budget": {
+        "max_opened_sources": 4,
+        "max_rounds": 2
+      },
+      "unresolved_conditions": [
+        "财报原文（SEC/IR页面）不可访问且中文转述数字冲突",
+        "财年口径（FY2025起止）无法与声明对齐"
+      ],
+      "planned_query_count": 3
+    },
+    {
+      "claim_id": "S25-C004",
+      "claim_hash": "cac217fe68ea4c0fe3c2962ff993c9b3545e89eb64db8f28769221d517ad1c3a",
+      "exact_claim": "东犁退休俱乐部2025年旅游业务营收超8亿元、总营收约10亿元、复购率超60%，2026年4月完成亿元级B轮融资（恒旭资本领投），是线下信任型银发服务跑通规模化的代表。",
+      "impact_areas": [
+        "opportunity-ranking",
+        "product-choice"
+      ],
+      "falsification_criterion": "找到东犁退休俱乐部官方、投资方或权威财经媒体披露与「2025年旅游业务营收超8亿元、总营收约10亿元、复购率超60%、2026年4月完成恒旭资本领投亿元级B轮」相冲突的信息，或证明该融资不存在。",
+      "adversarial_query_plan": [
+        {
+          "round": 1,
+          "queries": [
+            "东犁退休俱乐部 B轮 融资 亿元 恒旭资本",
+            "东犁 退休俱乐部 营收 10亿 复购率 60%"
+          ]
+        },
+        {
+          "round": 2,
+          "queries": [
+            "东犁旅游 8亿 2025 营收 复购"
+          ]
+        }
+      ],
+      "source_budget": {
+        "max_opened_sources": 4,
+        "max_rounds": 2
+      },
+      "unresolved_conditions": [
+        "公司未公开披露且媒体数字互相矛盾",
+        "融资信息仅有单一来源且无法交叉验证"
+      ],
+      "planned_query_count": 3
+    },
+    {
+      "claim_id": "S25-C017",
+      "claim_hash": "9b8b48700938fb163b637779a21e33ca167da82db2cf4c67acb7f280d97eb29a",
+      "exact_claim": "江苏省消保委调查：48.8%的老年游客被要求签署额外免责协议、37.8%需强制家属陪同、22.9%需提供健康证明，传统旅行社对高龄老人设置准入门槛甚至拒收，跟团游这一主流替代品在70+人群留下服务空白。",
+      "impact_areas": [
+        "opportunity-ranking",
+        "product-choice"
+      ],
+      "falsification_criterion": "找到江苏省消保委调查原文或权威报道给出与「48.8%签额外免责协议、37.8%强制家属陪同、22.9%需提供健康证明」不同的比例，或证明该调查不存在。",
+      "adversarial_query_plan": [
+        {
+          "round": 1,
+          "queries": [
+            "江苏省消保委 老年旅游 调查 48.8% 免责协议",
+            "江苏 老年游客 强制家属陪同 37.8% 健康证明 22.9%"
+          ]
+        },
+        {
+          "round": 2,
+          "queries": [
+            "江苏省消保委 银发旅游 消费调查 70岁 拒收"
+          ]
+        }
+      ],
+      "source_budget": {
+        "max_opened_sources": 4,
+        "max_rounds": 2
+      },
+      "unresolved_conditions": [
+        "消保委原文不可访问且媒体转述比例不一致",
+        "调查样本与时点无法确认"
+      ],
+      "planned_query_count": 3
+    },
+    {
+      "claim_id": "S3-C006",
+      "claim_hash": "45230e16129340e9e8abd153c4d3f7bccc9ef09e7c0b5e9cbb6f2a064c313f51",
+      "exact_claim": "监管已系统性介入「坑老」快钱模型：市场监管总局老年人药品保健品虚假宣传专项整治查办违法案件4516件、罚没6876.91万元、责令3611家主体整改；上海私域直播专项整治立案83起、单案最高罚35万元；微信2025年3月公告治理「养生直播」违规引流。",
+      "impact_areas": [
+        "executive-answer",
+        "go-no-go"
+      ],
+      "falsification_criterion": "找到市场监管总局通报原文给出与「查办违法案件4516件、罚没6876.91万元、责令3611家主体整改」不同的数字，或证明该专项整治通报不存在；或证明上海私域直播专项整治立案83起、单案最高罚35万元不存在。",
+      "adversarial_query_plan": [
+        {
+          "round": 1,
+          "queries": [
+            "市场监管总局 老年人药品保健品 虚假宣传 专项整治 4516件",
+            "市场监管总局 专项整治 罚没 6876.91万 整改 3611家"
+          ]
+        },
+        {
+          "round": 2,
+          "queries": [
+            "上海 私域直播 专项整治 立案 83起 罚款 35万"
+          ]
+        }
+      ],
+      "source_budget": {
+        "max_opened_sources": 4,
+        "max_rounds": 2
+      },
+      "unresolved_conditions": [
+        "总局通报原文不可访问且转述数字冲突",
+        "4516件对应专项整治的范围无法确认"
+      ],
+      "planned_query_count": 3
+    }
+  ]
+}

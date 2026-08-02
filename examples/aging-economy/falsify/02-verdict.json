@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "project": "aging-economy-demo",
+  "generated_at": "2026-08-02T12:35:00+08:00",
+  "preregistration_sha256": "24a93a9b5497c9fa273241950cd2c9287e1f8a671f243849c742022de382d095",
+  "attempts_sha256": "bad643d40ddd19f01ef7dd35e78a8d02dcff8586e9441fa1f549cc060181f248",
+  "verdicts": [
+    {
+      "claim_id": "S1-C008",
+      "claim_hash": "22ad663a03bb703ff944818ad217debcc138b0721cb56f057202054efb1cd8ae",
+      "status": "survived",
+      "reason": "国家发改委官网专家谈（国家信息中心胡祖铨）原句与声明数字逐项一致（约7万亿、占GDP约6%、2035年约30万亿、约10%）；第二轮检索发现的8-10万亿数字来自其他机构或更新时点口径，未构成对「发改委专家口径」这一表述的反证。",
+      "stop_reason": "全部3条计划查询执行完毕，可信反证为零。",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "successful_open_count": 1,
+      "credible_counterevidence_count": 0,
+      "uncovered_scope": [
+        "2025年后发改委更新口径（8万亿说法）未获发改委官网原文核验",
+        "《银发经济蓝皮书》原文未打开"
+      ]
+    },
+    {
+      "claim_id": "S1-C009",
+      "claim_hash": "663be0869c23b65694a7be93b5536dd734cff153c3c1ef0b9794ac3b84969aec",
+      "status": "unresolved",
+      "reason": "声明的2020年部分（4.37万亿、占GDP 5.25%）被多个权威转述确认；但「2050年有望增至百万亿级」与同一机构《中国老龄产业发展及指标体系研究》的40-69万亿预测（中新网原文已打开）冲突，而2014版蓝皮书的106万亿又支持该表述；冻结推翻判据仅覆盖2020年数字、未覆盖2050年部分，无法在预注册边界内裁决声明整体。",
+      "stop_reason": "证据冲突：2020年部分被多源确认，2050年部分存在同源机构不同版本报告互相冲突，触发预注册未决条件。",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "successful_open_count": 2,
+      "credible_counterevidence_count": 1,
+      "uncovered_scope": [
+        "《中国老龄产业发展报告(2021-2022)》原文未打开，其2050年40.69万亿测算为二手转述",
+        "声明中2050年预测的报告版本归属（2014版还是2021-2022版）未完全核验"
+      ]
+    },
+    {
+      "claim_id": "S1-C016",
+      "claim_hash": "e903679b5512dd7eeff90725156779674ea1cbe9067978587960a7b65941f666",
+      "status": "survived",
+      "reason": "科技日报原文确认CNNIC第56次《中国互联网络发展状况统计报告》（截至2025年6月）中60岁及以上银发网民1.61亿人、老年群体互联网普及率52.0%，与声明逐项一致；第二轮检索未发现冲突数字。",
+      "stop_reason": "全部3条计划查询执行完毕，可信反证为零。",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "successful_open_count": 1,
+      "credible_counterevidence_count": 0,
+      "uncovered_scope": [
+        "CNNIC第56次报告原文PDF未打开（采用科技日报转述）",
+        "人民网同题页面因证书错误未打开"
+      ]
+    },
+    {
+      "claim_id": "S2-C005",
+      "claim_hash": "b441b96175af9e267ce278dbe86fb5286ee2d62790ceaa1504d3394525be55c0",
+      "status": "survived",
+      "reason": "公司财报新闻稿原文确认FY2025营收27.256亿元（同比约-28.2%）、净利润3.566亿元、Letsvan收购并表、FY2026潮玩收入指引7.5-8亿元，与声明逐项一致；第二轮检索（含2026财年Q1超指引报道）未发现冲突。",
+      "stop_reason": "全部3条计划查询执行完毕，可信反证为零。",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "successful_open_count": 1,
+      "credible_counterevidence_count": 0,
+      "uncovered_scope": [
+        "SEC 6-K申报原文未打开（采用公司在GlobeNewswire发布的财报新闻稿）",
+        "个人在线学习收入22.35亿元的构成明细未在打开页面逐项核对"
+      ]
+    },
+    {
+      "claim_id": "S25-C004",
+      "claim_hash": "cac217fe68ea4c0fe3c2962ff993c9b3545e89eb64db8f28769221d517ad1c3a",
+      "status": "survived",
+      "reason": "36氪与领投方恒旭资本官网原文确认：2026年4月亿元级B轮融资（恒旭领投）、2025年旅游业务营收超8亿元、复购率超60%；「总营收约10亿」为媒体概括口径，无反证但也无公司直接披露。",
+      "stop_reason": "全部3条计划查询执行完毕，可信反证为零。",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "successful_open_count": 2,
+      "credible_counterevidence_count": 0,
+      "uncovered_scope": [
+        "「总营收约10亿元」未获公司直接披露确认，为媒体概括口径（旅游8亿+电商预计3-4亿）",
+        "复购率超60%的计算口径（分子分母定义）未披露"
+      ]
+    },
+    {
+      "claim_id": "S25-C017",
+      "claim_hash": "9b8b48700938fb163b637779a21e33ca167da82db2cf4c67acb7f280d97eb29a",
+      "status": "survived",
+      "reason": "扬子晚报原文确认三项比例为48.79%/37.77%/22.86%，与声明的48.8%/37.8%/22.9%系四舍五入一致；声明指向的70+服务空白判断与该调查「年龄限制成核心痛点」一致。",
+      "stop_reason": "全部3条计划查询执行完毕，可信反证为零。",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "successful_open_count": 1,
+      "credible_counterevidence_count": 0,
+      "uncovered_scope": [
+        "江苏省消保委官网原文未打开（采用扬子晚报转述）",
+        "问卷样本量（13830份）未在已打开页面中出现"
+      ]
+    },
+    {
+      "claim_id": "S3-C006",
+      "claim_hash": "45230e16129340e9e8abd153c4d3f7bccc9ef09e7c0b5e9cbb6f2a064c313f51",
+      "status": "survived",
+      "reason": "央视网原文确认专项整治查办4516件、罚没6876.91万元、责令3611家整改；上海市监局官网原文确认立案83起与单案罚款35万元；声明三组数字均获监管口径原文支撑。",
+      "stop_reason": "全部3条计划查询执行完毕，可信反证为零。",
+      "planned_query_count": 3,
+      "actual_query_count": 3,
+      "successful_open_count": 2,
+      "credible_counterevidence_count": 0,
+      "uncovered_scope": [
+        "微信2025年3月「养生直播」治理公告原文未打开",
+        "上海通报为截至8月底口径，与全年口径的差异未核验"
+      ]
+    }
+  ]
+}
