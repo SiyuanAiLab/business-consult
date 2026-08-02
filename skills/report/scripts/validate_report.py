@@ -40,10 +40,6 @@ LABELS = {
 }
 REQUIRED_HEADINGS = (
     "执行摘要",
-    "情境",
-    "冲突",
-    "问题",
-    "答案",
     "Red Flags",
     "Yellow Flags",
     "Open Questions",
@@ -70,6 +66,31 @@ ANSWER_BYPASS_RE = re.compile(
     r"(?:值得|建议|应当|应该|必须|须|首选|第二顺位|优先|选择|进入|切入|"
     r"启动|停止|立项|推出|定价|销售|投放|扩张|聚焦|采用|放弃|行动|"
     r"产品选择|商业模式)"
+)
+GENERIC_HEADING_RE = re.compile(
+    r"^(?:\d+[.、]\s*)?(?:情境|冲突|问题|答案|背景|总结|行业分析|竞争分析|"
+    r"用户痛点|机会分析|产品选择)(?:\s*$|\s*[:：·—-])",
+    re.IGNORECASE,
+)
+SUPPORT_HEADING_RE = re.compile(
+    r"^论点\s*(?:[1-5]|一|二|三|四|五)\s*[｜|:：]\s*(.+)$",
+    re.IGNORECASE,
+)
+EVIDENCE_GROUP_HEADING_RE = re.compile(
+    r"^证据组\s*(?:[1-9]\d*|一|二|三|四|五|六|七|八|九|十)\s*[｜|:：]\s*(.+)$",
+    re.IGNORECASE,
+)
+STRUCTURAL_PREFIX_RE = re.compile(
+    r"^(?:执行摘要|论点\s*(?:[1-5]|一|二|三|四|五)|"
+    r"证据组\s*(?:[1-9]\d*|一|二|三|四|五|六|七|八|九|十)|"
+    r"Red Flags|Yellow Flags|Open Questions|验证边界|专业附件入口|来源附录)\s*[｜|:：]\s*",
+    re.IGNORECASE,
+)
+JUDGMENT_CUE_RE = re.compile(
+    r"(?:是|不是|仍|已|将|会|应|需|必须|可以|可|不能|不会|决定|取决于|"
+    r"意味着|表明|证明|支持|支撑|构成|成立|失效|优于|高于|低于|强于|弱于|"
+    r"足以|不足|尚未|存在|缺失|拖住|击穿|收缩|上移|归零|完成|保留|绕开|"
+    r"进入|退出|维持|改为|不等于|只影响|不影响|分化|收敛|可信|不可|未决|待验证)"
 )
 
 
@@ -434,6 +455,92 @@ def visible_claim_text(line: str) -> str:
     return value.strip()
 
 
+def action_title_core(heading: str) -> str:
+    """Remove a recognized structural prefix and Markdown decoration."""
+    core = STRUCTURAL_PREFIX_RE.sub("", heading.strip(), count=1)
+    core = re.sub(r"[*_`#]", "", core)
+    return core.strip()
+
+
+def is_generic_heading(heading: str) -> bool:
+    return bool(GENERIC_HEADING_RE.search(heading.strip()))
+
+
+def is_action_title(heading: str) -> bool:
+    """Use a conservative deterministic proxy for a complete judgment title."""
+    core = action_title_core(heading)
+    visible_chars = re.findall(r"[\u4e00-\u9fffA-Za-z0-9]", core)
+    if len(visible_chars) < 8:
+        return False
+    if re.search(r"(?:分析|概览|背景|总结|现状|情况|介绍|复盘|研究)$", core):
+        return False
+    return bool(JUDGMENT_CUE_RE.search(core))
+
+
+def validate_structure(text: str, report_name: str = "report.md") -> Findings:
+    """Validate pyramid placement, action titles, and evidence grouping."""
+    findings = Findings()
+    heading_records = [
+        (len(match.group(1)), match.group(2).strip(), match.start())
+        for match in re.finditer(r"^(#{1,6})\s+(.+)$", text, re.MULTILINE)
+    ]
+
+    for level, heading, _ in heading_records:
+        if level not in {2, 3}:
+            continue
+        if is_generic_heading(heading):
+            findings.critical.append(f"generic column heading is forbidden: {heading}")
+            continue
+        if not is_action_title(heading):
+            findings.critical.append(f"section heading is not a complete judgment: {heading}")
+
+    body = text.split(SOURCE_START, 1)[0]
+    visible_lines = [
+        line.strip()
+        for line in strip_frontmatter(body.splitlines())
+        if line.strip() and not (line.strip().startswith("<!--") and line.strip().endswith("-->"))
+    ]
+    governing_positions = [
+        index for index, line in enumerate(visible_lines) if "**最高判断**" in line
+    ]
+    if not governing_positions:
+        findings.critical.append("missing governing thought marker: **最高判断**")
+    elif len(governing_positions) > 1:
+        findings.critical.append("governing thought marker must appear exactly once")
+    elif governing_positions[0] > 2:
+        findings.critical.append("governing thought must appear within the first three visible lines")
+
+    support_records = [
+        (heading, position)
+        for level, heading, position in heading_records
+        if level == 2 and SUPPORT_HEADING_RE.match(heading)
+    ]
+    if not 3 <= len(support_records) <= 5:
+        findings.critical.append(
+            f"report needs 3-5 support arguments; found {len(support_records)}"
+        )
+    for index, (heading, position) in enumerate(support_records):
+        next_h2_positions = [
+            candidate_position
+            for level, _, candidate_position in heading_records
+            if level == 2 and candidate_position > position
+        ]
+        section_end = min(next_h2_positions) if next_h2_positions else len(text)
+        evidence_groups = [
+            candidate_heading
+            for level, candidate_heading, candidate_position in heading_records
+            if level == 3
+            and position < candidate_position < section_end
+            and EVIDENCE_GROUP_HEADING_RE.match(candidate_heading)
+        ]
+        if not evidence_groups:
+            findings.critical.append(f"support argument has no evidence group: {heading}")
+
+    findings.checks.append(f"pyramid support arguments checked: {len(support_records)}")
+    findings.checks.append("action-title headings checked")
+    return findings
+
+
 def is_metadata_exception(section: str | None, line: str, tag: str) -> bool:
     """Allow only narrowly recognizable delivery metadata to omit a claim mapping."""
     if section not in METADATA_SECTIONS or tag != "[Opinion]":
@@ -453,6 +560,8 @@ def validate_report(context: Context, report_path: Path) -> Findings:
     except FileNotFoundError:
         findings.critical.append(f"missing report: {report_path}")
         return findings
+
+    findings.extend(validate_structure(text, report_path.name))
 
     headings = [match.group(1).strip() for match in re.finditer(r"^#{1,6}\s+(.+)$", text, re.MULTILINE)]
     for required in REQUIRED_HEADINGS:
@@ -651,7 +760,7 @@ def render_markdown(markdown_text: str) -> str:
             index += 2
             rows: list[list[str]] = []
             while index < len(lines):
-                candidate = lines[index].strip()
+                candidate = re.sub(r"\s*<!--.*?-->", "", lines[index]).strip()
                 if not (candidate.startswith("|") and candidate.endswith("|")):
                     break
                 rows.append([cell.strip() for cell in candidate.strip("|").split("|")])

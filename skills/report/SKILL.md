@@ -1,10 +1,11 @@
 ---
 name: report
-description: Turn a completed business-consult research package and falsify verdict overlay into a defensible narrative Markdown report with same-line source links, reader-facing honesty labels, an automatically generated source appendix, and deterministic HTML. Use when the user asks for a final consulting report, executive answer, SCQA narrative, or report rendering from research 03–14 artifacts and falsify outputs.
+description: Turn a completed business-consult research package and falsify verdict overlay into a defensible pyramid-structured Markdown report with a first-screen governing thought, three to five MECE arguments, action-title sections, same-line source links, an automatically generated source appendix, and deterministic HTML. Use when the user asks for a final consulting report, executive answer, pyramid narrative, or report rendering from research 03–14 artifacts and falsify outputs.
 license: CC-BY-4.0
 metadata:
   author: Siyuan (AI·LAB)
   release: flagship
+  component_version: "2.0.0"
 ---
 
 # Report
@@ -33,19 +34,23 @@ Stop on any Critical finding, including a missing handoff file, invalid verdict,
 6. Treat `survived` only as not overturned within the declared budget; never call it true.
 7. Place every `unresolved` claim exclusively under Open Questions; it is Critical anywhere else.
 
-## 3. Write a narrative, not a stage dump
+## 3. Build the pyramid before writing prose
 
-Use SCQA as the spine: situation, complication, question, answer. Integrate industry, business model, competition, user pain, opportunity, and product choice into the argument. Do not reproduce S1/S2/S3 order.
+Write the governing thought in one sentence within the first three visible lines, immediately after the H1 title. Then define three to five mutually exclusive support arguments that collectively answer the governing thought. Group evidence under the argument it proves; never reproduce S1/S2/S3 order.
 
 The report must contain:
 
-- execution summary and explicit answer;
-- SCQA narrative covering every required business dimension;
+- a first-screen governing thought and explicit answer;
+- three to five `## 论点N｜完整判断句` sections;
+- one or more `### 证据组N｜完整判断句` sections under every argument;
+- evidence coverage for industry, business model, competition, user pain, opportunity, and product choice;
 - Red Flags, Yellow Flags, and Open Questions after falsification;
 - validation boundary and professional attachment entry points;
 - a generated source appendix.
 
-Follow the line and table syntax in `references/report-contract.md`. Every data conclusion and every evidence-bearing table row must show the source title and clickable original URL on the same line. Keep Chinese reader labels visible and machine labels in HTML comments.
+Every H2 and H3 heading must be an action title: a complete judgment that remains meaningful when read alone. Generic column headings such as `情境`, `冲突`, `问题`, `答案`, `背景`, `总结`, or `行业分析` are Critical findings. Follow the line and table syntax in `references/report-contract.md`. Every data conclusion and every evidence-bearing table row must show the source title and clickable original URL on the same line. Keep Chinese reader labels visible and machine labels in HTML comments.
+
+Prefer decision density over a page target. Keep the full evidence chain when it changes confidence, action, or risk; remove repetition instead of imposing a fixed page count. Use 30x-style governing thought, action titles, and evidence grouping only as structural references—never import its content.
 
 ## 4. Generate the source appendix
 
@@ -78,3 +83,5 @@ Fix every Critical finding before delivery. Re-run validation after every Markdo
 - Never create a separate HTML content version.
 - Never modify research JSON schemas or write back to research artifacts.
 - Never describe `survived` as proven true.
+- Never use a generic column name as a section title.
+- Never optimize the report to a fixed page count.

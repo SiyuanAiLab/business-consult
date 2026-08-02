@@ -12,18 +12,17 @@ python3 scripts/validate_report.py probe PROJECT_ROOT \
 
 The probe verifies the research handoff, merges all stage source catalogs, checks claim-to-source resolution, compares the compatibility source register, and authenticates the verdict overlay against exact claim hashes.
 
-## 2. Plan the narrative
+## 2. Plan the pyramid
 
-Create an argument map before prose:
+Create a dot-dash argument map before prose:
 
-- decision and explicit answer;
-- situation evidence;
-- complication and counterevidence;
-- decision question;
-- answer, rejected alternatives, and action threshold;
+- one governing thought that states the answer, reason, and decision boundary;
+- three to five MECE support arguments;
+- one or more evidence groups under each argument;
+- rejected alternatives and action thresholds inside the argument they affect;
 - red/yellow flags and open questions.
 
-Map every `[Data]`, `[Estimate]`, `[Assumption]`, and `[Opinion]` argument line to one or more existing, same-label claim IDs. Drop falsified claims before drafting. Put every unresolved claim exclusively under Open Questions; do not use it in summaries, SCQA, answers, or flags.
+Draft and read only the action titles first. They must form a coherent answer without body text. Then map every `[Data]`, `[Estimate]`, `[Assumption]`, and `[Opinion]` argument line to one or more existing, same-label claim IDs. Drop falsified claims before drafting. Put every unresolved claim exclusively under Open Questions; do not use it in summaries, arguments, answers, or flags.
 
 Only pure delivery metadata under `验证边界` or `专业附件入口` may omit a claim. Keep this exception to validation inputs/methods and explicit attachment paths; never place a decision, recommendation, product choice, or action inside it.
 
@@ -31,7 +30,7 @@ Only pure delivery metadata under `验证边界` or `专业附件入口` may omi
 
 Use the syntax in `report-contract.md`. Cite one to three load-bearing sources on the same line, preferring T1. A source title and URL must come from the merged stage catalog; do not copy them from `12-sources.md`.
 
-Keep the report narrative. Do not concatenate stage summaries or name sections after S1–S5.
+Keep the report narrative. Group evidence by the conclusion it supports. Do not concatenate stage summaries or name sections after S1–S5. Do not target a fixed page count; optimize for decision density and retain evidence that changes confidence, risk, or action.
 
 ## 4. Generate the appendix
 
@@ -41,7 +40,10 @@ Add the two source markers and run the `sources` command. Re-run it after upstre
 
 Run `validate`. It checks:
 
-- required narrative sections and business dimensions;
+- a governing thought within the first three visible lines;
+- three to five support arguments and evidence groups;
+- action-title H2/H3 headings, with generic column headings blocked as Critical;
+- required operational sections and business dimensions;
 - reader/machine label pairing;
 - claim mapping for all four substantive labels and claim-label consistency;
 - same-line source title and original link;

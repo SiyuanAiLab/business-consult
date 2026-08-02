@@ -100,4 +100,4 @@ stop_reason_code: five_gates_completed
 
 ## Stop reason
 
-五道门全部完成（scope_clarity、assumption_review、causal_logic、evidence_check、research_plan_ready），五问五答均有记录，研究规格十一要素齐备且含明确终止条件，诊断以 five_gates_completed 正常收口。补跑性质见文首诚实标注。
+五道公开诊断步骤全部完成（scope_clarity、assumption_review、causal_logic、evidence_check、research_plan_ready），五问五答均有记录，研究规格十一要素齐备且含明确终止条件，诊断正常收口。补跑性质见文首诚实标注。

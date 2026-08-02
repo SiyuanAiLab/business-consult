@@ -38,21 +38,37 @@ The overlay may cover only high-impact claims. An omitted claim is untested, not
 
 ## Required report sections
 
-Use headings that contain these terms:
+Put one governing thought line immediately after the H1 title and within the first three visible lines:
+
+```markdown
+# 报告标题
+> **建议判断**：**最高判断**：先做 A，因为 B，并以 C 作为停止线。 <!-- claims:S5-C001 --> <!-- [Opinion] -->
+```
+
+The body must contain three to five H2 support arguments:
+
+```markdown
+## 论点一｜客户已为结果型交付付费
+### 证据组一｜陪跑客单与续费均高于纯内容
+```
+
+Every support argument needs at least one H3 evidence group. Evidence is grouped by the argument it proves, not by research stage.
+
+Use action-title headings that contain these operational terms:
 
 1. `执行摘要`
-2. `情境`
-3. `冲突`
-4. `问题`
-5. `答案`
-6. `Red Flags`
-7. `Yellow Flags`
-8. `Open Questions`
-9. `验证边界`
-10. `专业附件入口`
-11. `来源附录`
+2. `Red Flags`
+3. `Yellow Flags`
+4. `Open Questions`
+5. `验证边界`
+6. `专业附件入口`
+7. `来源附录`
 
-The SCQA body must explicitly cover industry, business model, competition, user pain, opportunity, and product choice. Stage-number headings are forbidden.
+Examples: `## Red Flags｜私域基数不足会先击穿小规模试点` and `## 来源附录｜全部原始链接均可零跳转复核`.
+
+Every H2 and H3 must be a complete judgment sentence. A generic heading—including `情境`, `冲突`, `问题`, `答案`, `背景`, `总结`, `行业分析`, `竞争分析`, `用户痛点`, `机会分析`, or `产品选择`—is Critical whether used alone or as a colon-style prefix. The report must explicitly cover industry, business model, competition, user pain, opportunity, and product choice. Stage-number headings are forbidden.
+
+There is no page-count target. Optimize for decision density, preserve evidence that changes confidence or action, and remove only duplication. Keep source links on the same line as the claim so the reader can open the original without jumping to an appendix.
 
 ## Claim syntax
 
@@ -80,7 +96,7 @@ Rules:
 ## Source appendix markers
 
 ```markdown
-## 来源附录
+## 来源附录｜全部原始链接均可零跳转复核
 
 <!-- REPORT:SOURCES:START -->
 <!-- REPORT:SOURCES:END -->
