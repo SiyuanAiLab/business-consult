@@ -1,6 +1,6 @@
 # Business Consult Skills
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/SiyuanAiLab/business-consult)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)](https://github.com/SiyuanAiLab/business-consult)
 
 **让 AI 做商业调研，每个结论都敢标明身份：这是数据、这是推算、这是没验证的、这是它的判断——编不出来的，它写「未知」。**
 

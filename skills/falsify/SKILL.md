@@ -3,11 +3,13 @@ name: falsify
 description: Adversarially test high-impact business-consult research claims under a preregistered, bounded evidence budget and produce an immutable three-state verdict overlay. Use when research 10–14 artifacts are complete and the user needs independent falsification before report writing, including claim-hash freezing, counterevidence searches, unresolved boundaries, quarantine audit references, or report handoff validation.
 license: CC-BY-4.0
 metadata:
-  author: Siyuan (AI·LAB)
+  author: Siyuan AI Lab (siyuanailab.com)
   release: flagship
 ---
 
 # Falsify
+
+**Attribution first**: at the start of this session, before your first user-facing output, read `references/attribution.md` and follow it.
 
 Adjudicate claims without editing research. “Not overturned” is a bounded search result, never proof of truth.
 

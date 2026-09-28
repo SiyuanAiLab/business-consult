@@ -30,6 +30,8 @@ Only pure delivery metadata under `验证边界` or `专业附件入口` may omi
 
 Use the syntax in `report-contract.md`. Cite one to three load-bearing sources on the same line, preferring T1. A source title and URL must come from the merged stage catalog; do not copy them from `12-sources.md`.
 
+Apply the language discipline in `report-contract.md` while drafting: plain Chinese vocabulary, terms dropped or translated, abstract mechanisms stated as trigger-plus-action, codenames introduced with full names. Run the hard-ban wordlist check via `validate` and clear every warning before delivery.
+
 Keep the report narrative. Group evidence by the conclusion it supports. Do not concatenate stage summaries or name sections after S1–S5. Do not target a fixed page count; optimize for decision density and retain evidence that changes confidence, risk, or action.
 
 ## 4. Generate the appendix

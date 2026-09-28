@@ -70,6 +70,19 @@ Every H2 and H3 must be a complete judgment sentence. A generic heading—includ
 
 There is no page-count target. Optimize for decision density, preserve evidence that changes confidence or action, and remove only duplication. Keep source links on the same line as the claim so the reader can open the original without jumping to an appendix.
 
+## Language discipline（语言纪律）
+
+The report's first reader is the decision maker and general users, not consultants. Structure, headings, reader/machine labels, and source lines are unchanged; these rules govern **vocabulary only**:
+
+- **R1 No mixed-language jargon**: loanwords such as commoditize, harness, link-in-bio, kill criterion must be rewritten in plain Chinese. The hard-ban wordlist lives in `references/plain-language-words.txt` and is scanned by `validate` as warnings. Product names (SkillHub, Skill) and developer terms (API, JSON) are exempt.
+- **R2 Terms: drop or translate**: prefer concrete numbers or facts over jargon (幂律/归因/证伪/生态税/围墙花园); when a term is unavoidable, attach one plain-language explanation on first use.
+- **R3 Abstract mechanisms need concrete pictures**: 停止线/裁决点/降级/观察位/兜底 must state the trigger condition and the action taken.
+- **R4 Project codenames**: a codename must carry a plain full name on first use (e.g. 「针 1：SkillHub 下载数自动抓取」); codenames may be used afterwards. Public-release versions prefer full names.
+- **R5 Metaphors**: must be simpler and more accurate than the term they replace; they aid understanding and never substitute for argument.
+- **R6 Coined concept words count as jargon**: self-invented nouns in titles and body (X 仪/X 链/X 弹头/X 位/X 并行 style) must be rewritten in plain language by default; if one must be kept as a name, attach a plain explanation on first use and keep it out of titles. Numbered codenames (针 1/O1/PS1) follow R4, not this rule.
+
+Warnings from the jargon scan do not block delivery, but every warning must be resolved or justified in the `验证边界` section before delivery.
+
 ## Claim syntax
 
 Write visible Chinese labels and hidden machine labels on the same Markdown line:

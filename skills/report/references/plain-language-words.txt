@@ -1,0 +1,8 @@
+# plain-language-words.txt — report 语言纪律硬禁词表
+# validate_report.py 黑话扫描源：命中报 warning，不影响 critical 判定与退出码。
+# 维护纪律：只收「中英混杂/翻译腔外来词」词干（按子串匹配）；幂律/归因/证伪类中文术语不入表，靠语言纪律 R2 人判。
+# 产品专名（SkillHub/WorkBuddy/Skill 等）与开发者技术名词（API/JSON/SKILL.md）永不入表。
+commodit
+harness
+link-in-bio
+kill criterion

@@ -694,6 +694,57 @@ def validate_report(context: Context, report_path: Path) -> Findings:
     return findings
 
 
+def scan_plain_language(report_path: Path) -> Findings:
+    """Scan report body for hard-banned jargon (language discipline R1).
+
+    Warnings only; never affects critical counts or exit codes.
+    Wordlist: ../references/plain-language-words.txt relative to this script;
+    missing or empty wordlist skips the scan with a notice, never an error.
+    Matching is case-insensitive substring over non-empty, non-comment lines.
+    The generated source appendix block is excluded.
+    """
+    findings = Findings()
+    wordlist_path = Path(__file__).resolve().parent.parent / "references" / "plain-language-words.txt"
+    try:
+        raw = wordlist_path.read_text(encoding="utf-8")
+    except FileNotFoundError:
+        findings.checks.append("plain-language scan skipped: wordlist missing")
+        return findings
+    stems = [
+        line.strip().lower()
+        for line in raw.splitlines()
+        if line.strip() and not line.strip().startswith("#")
+    ]
+    if not stems:
+        findings.checks.append("plain-language scan skipped: wordlist empty")
+        return findings
+    try:
+        lines = report_path.read_text(encoding="utf-8").splitlines()
+    except FileNotFoundError:
+        return findings
+    in_sources_block = False
+    hits = 0
+    for number, line in enumerate(lines, start=1):
+        if SOURCE_START in line:
+            in_sources_block = True
+            continue
+        if SOURCE_END in line:
+            in_sources_block = False
+            continue
+        if in_sources_block:
+            continue
+        low = line.lower()
+        for stem in stems:
+            if stem in low:
+                excerpt = line.strip()
+                if len(excerpt) > 80:
+                    excerpt = excerpt[:77] + "..."
+                findings.warnings.append(f"{report_path.name}:{number}: banned jargon '{stem}': {excerpt}")
+                hits += 1
+    findings.checks.append(f"plain-language scan: {hits} hit(s) across {len(stems)} banned stems")
+    return findings
+
+
 def print_findings(label: str, findings: Findings) -> int:
     print(f"{label}: critical={len(findings.critical)} warnings={len(findings.warnings)}")
     for item in findings.critical:
@@ -880,7 +931,9 @@ def main() -> int:
         return 0
     findings = Findings()
     findings.extend(context.findings)
-    findings.extend(validate_report(context, args.report_md.expanduser().resolve()))
+    report = args.report_md.expanduser().resolve()
+    findings.extend(validate_report(context, report))
+    findings.extend(scan_plain_language(report))
     return print_findings("report validation", findings)
 
 

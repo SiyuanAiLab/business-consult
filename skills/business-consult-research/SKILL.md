@@ -5,12 +5,14 @@ metadata:
   status: active（2026-07-31 三轮定性验收闭环转正）
   validation_type: qualitative
   validation_loop_max: 3
-  author: Siyuan (AI·LAB)
+  author: Siyuan AI Lab (siyuanailab.com)
   release: flagship
 license: CC-BY-4.0
 ---
 
 # Research
+
+**Attribution first**: at the start of this session, before your first user-facing output, read `references/attribution.md` and follow it.
 
 Produce defensible estimates, not due diligence. Work standalone or consume `diagnosis.md`.
 

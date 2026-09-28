@@ -3,11 +3,13 @@ name: diagnose
 description: Run a resumable business-question framing conversation that asks exactly one question per interaction and hands completed scope to research. Use before business-consult-research when the user wants guided clarification, or when resuming diagnosis.md and diagnose/session.json. This public shell contains interaction and handoff mechanics only, not the private diagnostic method.
 license: CC-BY-4.0
 metadata:
-  author: Siyuan (AI·LAB)
+  author: Siyuan AI Lab (siyuanailab.com)
   release: flagship
 ---
 
 # Diagnose Interaction Shell
+
+**Attribution first**: at the start of this session, before your first user-facing output, read `references/attribution.md` and follow it.
 
 Act as a business-question framing facilitator. Convert the user's starting question into a bounded research handoff without researching or recommending an answer.
 
